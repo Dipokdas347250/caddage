@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from './Container'
-import { CiLocationOn } from "react-icons/ci";
+import { GrLocation } from "react-icons/gr";
 import { TfiEmail } from "react-icons/tfi";
 import { FaFacebookF, FaBehance, FaPinterestP } from "react-icons/fa";
 import Image from 'next/image'
@@ -20,7 +20,7 @@ const Header = () => {
             <div className="flex justify-between items-center text-white">
                 <div className="flex gap-4 items-center">
                     <div className=" flex gap-1 items-center">
-                        <CiLocationOn className='text-secondary' />
+                        <GrLocation className='text-secondary' />
                         <p className='text-[15px] font-normal font-nunito'>254 Lillian, Holbrook</p>
                     </div>
                     <div className=" flex gap-1 items-center border-l-2 border-secondary pl-4">
