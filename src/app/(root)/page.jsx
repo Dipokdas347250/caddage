@@ -1,4 +1,5 @@
 import Banner from '@/components/home/Banner'
+import ChooseUs from '@/components/home/ChooseUs'
 import Trusted from '@/components/home/Trusted'
 import React from 'react'
 
@@ -7,6 +8,7 @@ const page = () => {
     <>
     <Banner/>
     <Trusted/>
+    <ChooseUs/>
     </>
     
   )
