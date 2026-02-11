@@ -1,7 +1,9 @@
 import Banner from '@/components/home/Banner'
 import ChooseUs from '@/components/home/ChooseUs'
 import Client_Testimonial from '@/components/home/Client_Testimonial'
+import Counter_part from '@/components/home/Counter_part'
 import Hot_offer from '@/components/home/Hot_offer'
+import Leatest_Blog from '@/components/home/Leatest_Blog'
 import Product_Facilities from '@/components/home/Product_Facilities'
 import Products from '@/components/home/Products'
 import Team_Member from '@/components/home/Team_Member'
@@ -23,6 +25,8 @@ const page = () => {
     <Team_Member/>
     <Trending_Products/>
     <Client_Testimonial/>
+    <Counter_part/>
+    <Leatest_Blog/>
     </>
     
   )
