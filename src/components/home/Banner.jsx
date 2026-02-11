@@ -73,7 +73,7 @@ const Banner = () => {
              <h5 className='text-[18px] font-nunito font-bold text-primary'>100% genuine Products</h5>
           </div>
           <div className="">
-            <h2 className='text-[70px] font-inter font-bold text-primary'>Tasty & Healthy organic Food</h2>
+            <h2 className='text-[70px] font-inter font-bold text-primary leading-[120%]'>Tasty & Healthy organic Food</h2>
             <button className=' flex items-center gap-2 bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7.5 py-4 uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary mt-8.5'>Explore Products <BsArrowRight/> </button>
 
           </div>
@@ -89,10 +89,10 @@ const Banner = () => {
           <div className="">
             <div className="flex items-center">
              <Image src={herb} alt="herb"  /> 
-             <h5 className='text-[18px] font-nunito font-bold text-primary'>100% genuine Products</h5>
+             <h5 className='text-[18px] font-nunito font-bold text-primary '>100% genuine Products</h5>
           </div>
           <div className="">
-            <h2 className='text-[70px] font-inter font-bold text-primary'>Tasty & Healthy organic Food</h2>
+            <h2 className='text-[70px] font-inter font-bold text-primary leading-[120%]'>Tasty & Healthy organic Food</h2>
             <button className=' flex items-center gap-2 bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7.5 py-4 uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary mt-8.5'>Explore Products <BsArrowRight/> </button>
 
           </div>
@@ -111,7 +111,7 @@ const Banner = () => {
              <h5 className='text-[18px] font-nunito font-bold text-primary'>100% genuine Products</h5>
           </div>
           <div className="">
-            <h2 className='text-[70px] font-inter font-bold text-primary'>Tasty & Healthy organic Food</h2>
+            <h2 className='text-[70px] font-inter font-bold text-primary leading-[120%]'>Tasty & Healthy organic Food</h2>
             <button className=' flex items-center gap-2 bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7.5 py-4 uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary mt-8.5'>Explore Products <BsArrowRight/> </button>
 
           </div>
@@ -127,10 +127,10 @@ const Banner = () => {
           <div className="">
             <div className="flex items-center">
              <Image src={herb} alt="herb"  /> 
-             <h5 className='text-[18px] font-nunito font-bold text-primary'>100% genuine Products</h5>
+             <h5 className='text-[18px] font-nunito font-bold text-primary '>100% genuine Products</h5>
           </div>
           <div className="">
-            <h2 className='text-[70px] font-inter font-bold text-primary'>Tasty & Healthy organic Food</h2>
+            <h2 className='text-[70px] font-inter font-bold text-primary leading-[120%]'>Tasty & Healthy organic Food</h2>
             <button className=' flex items-center gap-2 bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7.5 py-4 uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary mt-8.5'>Explore Products <BsArrowRight/> </button>
 
           </div>
@@ -149,7 +149,7 @@ const Banner = () => {
              <h5 className='text-[18px] font-nunito font-bold text-primary'>100% genuine Products</h5>
           </div>
           <div className="">
-            <h2 className='text-[70px] font-inter font-bold text-primary'>Tasty & Healthy organic Food</h2>
+            <h2 className='text-[70px] font-inter font-bold text-primary leading-[120%]'>Tasty & Healthy organic Food</h2>
             <button className=' flex items-center gap-2 bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7.5 py-4 uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary mt-8.5'>Explore Products <BsArrowRight/> </button>
 
           </div>

@@ -16,7 +16,7 @@ const Hot_offer = () => {
                         <div className=" w-1/2 ">
                            <div className="py-30">
                              <h4 className='text-[18px] text-secondary font-bold font-nunito'>Todays Hot Deals</h4>
-                            <h2 className='text-[50px] text-primary font-bold font-inter'>Original Stock Honey Combo Package</h2>
+                            <h2 className='text-[50px] text-primary font-bold font-inter leading-[120%]'>Original Stock Honey Combo Package</h2>
                             <p className='text-[18px] text-tertiary font-normal font-nunito w-[90%] mt-5'>Cur tantas regiones barbarorum obiit, tot maria transmist summo bono fruitur id est voluptate barbarorum  </p>
                             <div className="flex items-center gap-5 mt-6">
                                 <div className="">
