@@ -1,3 +1,5 @@
+
+
 const Navberdata = {
     navlist: 
          [
@@ -9,27 +11,29 @@ const Navberdata = {
     {
         id:2,
         title: "About",
-        url: "about"
+        url: "/about"
     },
     {
         id: 3,
        title: "Shop",
-       url:"shop" 
+       url:"/shop" 
+       
     },
     {
         id: 4,
        title: "Pages",
-       url:"pages" 
+       url:"/pages" 
     },
     {
         id: 5,
        title: "Blog",
-       url:"blog" 
+       url:"/blog" 
+       
     },
     {
         id: 6,
        title: "Contact",
-       url:"contact" 
+       url:"/contact" 
     },
 
 

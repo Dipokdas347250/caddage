@@ -5,6 +5,7 @@ import logo from '../../../public/images/logo.png';
 import { FaRegHeart ,FaRegUser} from "react-icons/fa";
 import { PiShoppingCart } from "react-icons/pi";
 import Navberdata from '@/data/navber';
+import Link from 'next/link';
 
 
 
@@ -23,7 +24,8 @@ const Navber = () => {
                         <ul className='flex items-center gap-10'>
                            {Navberdata?.navlist?.map((item, index)=>(
                             <li className='text-[17px] text-primary font-nunito font-bold duration-300 ease-in-out  hover:text-secondary relative after:absolute after:content-[""] after:w-0 after:h-0.5 after:bg-secondary after:bottom-0 after:left-0 after:duration-300 after:ease-in-out hover:after:w-full' key={index}>
-                                <a href={item?.url}>{item?.title}</a>
+                                
+                                <Link href={item?.url}>{item?.title}</Link>
                             </li>
                            ))}
                         </ul>
