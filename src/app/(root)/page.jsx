@@ -27,6 +27,7 @@ const page = () => {
     <Client_Testimonial/>
     <Counter_part/>
     <Leatest_Blog/>
+
     </>
     
   )

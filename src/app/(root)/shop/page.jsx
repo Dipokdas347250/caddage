@@ -1,10 +1,13 @@
+import Shop from '@/components/shop/Shop'
+import Shop_list from '@/components/shop/Shop_list'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Shop/>
+    <Shop_list/>
+    </>
   )
 }
 

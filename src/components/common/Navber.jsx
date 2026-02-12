@@ -17,7 +17,9 @@ const Navber = () => {
         <Container>
             <div className="flex justify-between items-center">
                 <div className="">
+                     <Link href={"/"}>
                      <Image src={logo} alt="logo"  /> 
+                     </Link>
                 </div>
                 <div className=" flex items-center gap-8">
                     <div className="">

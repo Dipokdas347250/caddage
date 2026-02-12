@@ -49,7 +49,7 @@ const Client_Testimonial = () => {
 
     return (
         <>
-            <section className='pt-26.5 pb-20 bg-white'>
+            <section className='pt-26.5 pb-20 bg-[#F7F5EB]'>
                 <Container>
                     <div className="">
                         <h2 className='text-[48px] text-primary font-bold font-inter text-center leading-[100%]'>Client Testimonial</h2>
