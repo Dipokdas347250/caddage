@@ -83,7 +83,8 @@ const Product_Catagoris = () => {
           <div className=" flex justify-between gap-9 mt-13.5 ">
             <div className="w-[30%]"> 
               <div className="py-12.5 px-12 bg-white shadow-xl ">
-                <h2 className='text-[20px] text-primary font-bold font-inter '>Product Catagoris</h2>
+                <div className=" border-b border-[#272D61] ">
+                         <h2 className='text-[20px] text-primary font-bold font-inter '>Product Catagoris</h2>
                 {/* <ul>
                   {categories.map((item, index) => (
                     <li key={index}>
@@ -99,7 +100,7 @@ const Product_Catagoris = () => {
                     </li>
                   ))}
                 </ul> */}
-                <ul className="space-y-3 mt-5">
+                <ul className="space-y-3 my-5 ">
                   {categories.map((item, index) => (
                     <li key={index}>
                       <label className="flex items-center gap-2 cursor-pointer">
@@ -109,13 +110,71 @@ const Product_Catagoris = () => {
                           onChange={() => setActiveCategory(item.name)}
                           className="accent-[#80B500] w-4 h-4"
                         />
-                        <span className='text-[14x] text=[#272D61] font-nunito font-normal'>
+                        <span className='text-[14px] text-[#272D61] font-nunito font-normal '>
                           {item.name} ({item.count})
                         </span>
                       </label>
                     </li>
                   ))}
                 </ul>
+                </div>
+                <div className="border-b border-[#272D61]">
+                  <h2 className='text-[20px] text-primary font-bold font-inter my-5 pb-5 border-b-2 border-secondary'>Price/SQ Ft Filter</h2>
+                  <p className='text-[14px] text-[#272D61] font-nunito font-normal mb-5'>From $0 to $8000</p>
+
+                </div>
+                <div className="border-b border-[#272D61]">
+                  <h2 className='text-[20px] text-primary font-bold font-inter my-5  '>Filter By Color</h2>
+                  <div className="flex items-center gap-6.5 ">
+                    <div className="flex items-center gap-1">
+                      <div className="w-3.5 h-3.5 bg-[#5E37FF] rounded-full"></div>
+                      <h4 className='text-[14px] text-[#272D61] font-nunito font-normal'>Blue</h4>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <div className="w-3.5 h-3.5 bg-[#FF9437] rounded-full"></div>
+                      <h4 className='text-[14px] text-[#272D61] font-nunito font-normal'>Orange</h4>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <div className="w-3.5 h-3.5 bg-[#FFBF95] rounded-full"></div>
+                      <h4 className='text-[14px] text-[#272D61] font-nunito font-normal'>Brown</h4>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-6.5 mt-4.5 mb-5">
+                    <div className="flex items-center gap-1">
+                      <div className="w-3.5 h-3.5 bg-[#33D221] rounded-full"></div>
+                      <h4 className='text-[14px] text-[#272D61] font-nunito font-normal'>Green</h4>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <div className="w-3.5 h-3.5 bg-[#E248FF] rounded-full"></div>
+                      <h4 className='text-[14px] text-[#272D61] font-nunito font-normal'>Purple</h4>
+                    </div>
+                    <div className="flex items-center gap-1">
+                      <div className="w-3.5 h-3.5 bg-[#26CBFF] rounded-full"></div>
+                      <h4 className='text-[14px] text-[#272D61] font-nunito font-normal'>Sky</h4>
+                    </div>
+                  </div>
+                 
+
+                </div>
+                <div className="">
+                  <h2 className='text-[20px] text-primary font-bold font-inter my-5  '>Releated Tags</h2>
+                  <div className=" ">
+                    <div className="flex items-center gap-3">
+                      <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>Breads</h3>
+                      <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>healthy</h3>
+                      <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>organic</h3>
+                    </div>
+                    <div className="flex items-center gap-3 mt-3">
+                      <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>tomato</h3>
+                      <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>juices</h3>
+                      <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>natural</h3>
+                    </div>
+                   
+                  </div>
+                 
+                 
+
+                </div>
               </div>
             </div>
             <div className="w-[70%]">
