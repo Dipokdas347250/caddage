@@ -11,6 +11,7 @@ import { FaRegHeart, FaRegUser } from "react-icons/fa";
 import { PiShoppingCart } from "react-icons/pi";
 import { IoMdSearch } from "react-icons/io";
 import { useState } from "react";
+import Link from 'next/link';
 
 
 
@@ -241,8 +242,9 @@ const Product_Catagoris = () => {
               </div>
             </div>
             <div className="w-[70%]">
+            <Link href="/Single_Shop">
               <div className="">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary">
+                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
                     <Image className='' src={pro} alt="pro" />
 
@@ -276,8 +278,9 @@ const Product_Catagoris = () => {
                   </div>
                 </div>
               </div>
+            </Link>
               <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary">
+                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
                     <Image className='' src={pro} alt="pro" />
 
@@ -312,7 +315,7 @@ const Product_Catagoris = () => {
                 </div>
               </div>
               <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary">
+                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
                     <Image className='' src={pro} alt="pro" />
 
@@ -347,7 +350,7 @@ const Product_Catagoris = () => {
                 </div>
               </div>
               <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary">
+                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
                     <Image className='' src={pro} alt="pro" />
 
@@ -382,7 +385,7 @@ const Product_Catagoris = () => {
                 </div>
               </div>
               <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary">
+                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
                     <Image className='' src={pro} alt="pro" />
 
