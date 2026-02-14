@@ -81,11 +81,11 @@ const Product_Catagoris = () => {
           </div>
 
           <div className=" flex justify-between gap-9 mt-13.5 ">
-            <div className="w-[30%]"> 
+            <div className="w-[30%]">
               <div className="py-12.5 px-12 bg-white shadow-xl ">
                 <div className=" border-b border-[#272D61] ">
-                         <h2 className='text-[20px] text-primary font-bold font-inter '>Product Catagoris</h2>
-                {/* <ul>
+                  <h2 className='text-[20px] text-primary font-bold font-inter '>Product Catagoris</h2>
+                  {/* <ul>
                   {categories.map((item, index) => (
                     <li key={index}>
                       <label style={{ cursor: "pointer" }}>
@@ -100,7 +100,8 @@ const Product_Catagoris = () => {
                     </li>
                   ))}
                 </ul> */}
-                <ul className="space-y-3 my-5 ">
+
+                  {/* <ul className="space-y-3 my-5 ">
                   {categories.map((item, index) => (
                     <li key={index}>
                       <label className="flex items-center gap-2 cursor-pointer">
@@ -116,7 +117,69 @@ const Product_Catagoris = () => {
                       </label>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
+
+                  <ul className="space-y-3 my-5">
+                    {categories.map((item, index) => {
+                      const isActive = activeCategory === item.name;
+
+                      return (
+                        <li key={index}>
+                          <label className="flex items-center gap-2 cursor-pointer group">
+
+                            {/* Hidden Checkbox */}
+                            <input
+                              type="checkbox"
+                              checked={isActive}
+                              onChange={() => setActiveCategory(item.name)}
+                              className="hidden"
+                            />
+
+                            {/* Custom Checkbox */}
+                            <div
+                              className={`w-5 h-5 flex items-center justify-center rounded-md border-2
+                  transition-all duration-300 ease-in-out
+                  ${isActive
+                                  ? "bg-[#80B500] border-[#80B500] scale-110"
+                                  : "border-gray-400 group-hover:border-[#80B500]"
+                                }`}
+                            >
+                              {isActive && (
+                                <svg
+                                  className="w-3 h-3 text-white animate-[fadeIn_.2s_ease-in]"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="3"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M5 13l4 4L19 7"
+                                  />
+                                </svg>
+                              )}
+                            </div>
+
+                            {/* Text */}
+                            <span
+                              className={`transition-colors duration-200 select-none
+                  ${isActive
+                                  ? "text-[#80B500] font-medium"
+                                  : "text-gray-700 group-hover:text-[#80B500]"
+                                }`}
+                            >
+                              {item.name} ({item.count})
+                            </span>
+
+                          </label>
+                        </li>
+                      );
+                    })}
+                  </ul>
+
+
+
                 </div>
                 <div className="border-b border-[#272D61]">
                   <h2 className='text-[20px] text-primary font-bold font-inter my-5 pb-5 border-b-2 border-secondary'>Price/SQ Ft Filter</h2>
@@ -153,7 +216,7 @@ const Product_Catagoris = () => {
                       <h4 className='text-[14px] text-[#272D61] font-nunito font-normal'>Sky</h4>
                     </div>
                   </div>
-                 
+
 
                 </div>
                 <div className="">
@@ -169,10 +232,10 @@ const Product_Catagoris = () => {
                       <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>juices</h3>
                       <h3 className='py-1.5 px-5 bg-white border border-secondary rounded-full text-[12px] text-secondary font-nunito font-normal duration-300 ease-in-out hover:bg-secondary hover:text-white'>natural</h3>
                     </div>
-                   
+
                   </div>
-                 
-                 
+
+
 
                 </div>
               </div>
