@@ -279,6 +279,7 @@ const Product_Catagoris = () => {
                 </div>
               </div>
             </Link>
+             <Link href="/Single_Shop">
               <div className="mt-7.5">
                 <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
@@ -314,6 +315,8 @@ const Product_Catagoris = () => {
                   </div>
                 </div>
               </div>
+             </Link>
+              <Link href="/Single_Shop">
               <div className="mt-7.5">
                 <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
@@ -349,6 +352,8 @@ const Product_Catagoris = () => {
                   </div>
                 </div>
               </div>
+              </Link>
+              <Link href="/Single_Shop">
               <div className="mt-7.5">
                 <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
@@ -384,6 +389,8 @@ const Product_Catagoris = () => {
                   </div>
                 </div>
               </div>
+              </Link>
+              <Link href="/Single_Shop">
               <div className="mt-7.5">
                 <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
                   <div className="">
@@ -419,6 +426,7 @@ const Product_Catagoris = () => {
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
           </div>
         </Container>

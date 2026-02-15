@@ -16,7 +16,7 @@ const Team_Member = () => {
                             A highly efficient slip-ring scanner for today's diagnostic requirements.
                         </p>
                     </div>
-                    <div className=" flex justify-between gap-20 items-center">
+                    <div className=" flex justify-between gap-20 items-center mt-14">
                         <div className=" w-1/3">
                             <div className="">
                                 <Image className=' ' src={team} alt="team" />
