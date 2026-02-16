@@ -14,6 +14,7 @@ const Drinks = () => {
         <div className=" flex justify-between gap-7.5 mt-12.5">
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -43,6 +44,7 @@ const Drinks = () => {
           </div>
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -72,6 +74,7 @@ const Drinks = () => {
           </div>
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -101,6 +104,7 @@ const Drinks = () => {
           </div>
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -134,6 +138,7 @@ const Drinks = () => {
         <div className=" flex justify-between gap-7.5 mt-7.5">
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -163,6 +168,7 @@ const Drinks = () => {
           </div>
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -192,6 +198,7 @@ const Drinks = () => {
           </div>
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -221,6 +228,7 @@ const Drinks = () => {
           </div>
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
             <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
+              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
               <div className="flex items-center gap-5">
                 <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
                   <FaRegHeart />
@@ -251,6 +259,7 @@ const Drinks = () => {
          
 
         </div>
+       
        
       </div>
     </>
