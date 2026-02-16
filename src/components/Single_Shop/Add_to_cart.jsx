@@ -4,6 +4,7 @@ import Image from 'next/image'
 import add from '../../../public/images/add.png';
 import { FaStar } from "react-icons/fa";
 import { FaFacebookF, FaBehance, FaPinterestP, FaTwitter } from "react-icons/fa";
+import Link from 'next/link';
 
 
 
@@ -56,7 +57,12 @@ const Add_to_cart = () => {
                                     <FaBehance/>
                                 </div>
                             </div>
-                            <button className='py-3 bg-secondary border border-secondary text-white text-[18px] font-bold font-nunito duration-300 ease-in-out hover:bg-white hover:text-secondary mt-11 w-full cursor-pointer '>Add To Cart</button>
+                             <Link href="/addToCart" >
+                            <button className=' w-full bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7.5 py-4 text-center uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary mt-8.5'>
+                                Add to Cart
+
+                            </button>
+                            </Link>
                         </div>
                     </div>
                 </Container>
