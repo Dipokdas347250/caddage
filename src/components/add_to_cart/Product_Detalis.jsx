@@ -2,6 +2,7 @@ import React from 'react'
 import Container from '../common/Container'
 import Image from 'next/image'
 import price from '../../../public/images/price.png';
+import Link from 'next/link';
 
 const Add_to_Cart = () => {
   return (
@@ -157,7 +158,9 @@ const Add_to_Cart = () => {
                     <input type="checkbox" />
                     <p className='text-[10px] text-tertiary font-nunito font-normal'>Shipping & taxes calculated at checkout</p>
                   </div>
+                  <Link href="/cheakout">
                   <button className="w-full bg-secondary border border-secondary text-[14px] text-white font-normal font-nunito py-2.5 px-4 rounded-[2px] mt-8 cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary ">Proceed to Checkout</button>
+                  </Link>
                 </div>
               </div>
               <div className="mt-7.5">
@@ -167,7 +170,7 @@ const Add_to_Cart = () => {
                   <h3 className='text-[18px] text-tertiary font-normal font-nunito border-b border-tertiary pb-2.5 mt-8'>Mirpur Dohs Dhaka-1200</h3>
                   <h3 className='text-[18px] text-tertiary font-normal font-nunito border-b border-tertiary pb-2.5 mt-8'>Postal Code</h3>
                   
-                  <button className="w-full bg-secondary border border-secondary text-[14px] text-white font-normal font-nunito py-2.5 px-4 rounded-[2px] mt-8 cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary ">Calculate Shiping</button>
+                  <button className="w-full bg-secondary border border-secondary text-[14px] text-white font-normal font-nunito py-2.5 px-4 rounded-xs mt-8 cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary ">Calculate Shiping</button>
                 </div>
               </div>
             </div>

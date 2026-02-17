@@ -77,7 +77,7 @@ const Footer = () => {
                                     <GrLocation className='text-white' />
                                     <p className='text-[15px] text-white font-normal font-nunito'>254 Lillian, Holbrook</p>
                                 </div>
-                                <label className='py-4 pl-3 pr-2 bg-white' >
+                                <label className=' pl-3 py-2 pr-2 bg-white flex justify-between items-center' >
                                     <input className=' outline-none w-[50%]' type="email" placeholder=' Enter email address' />
                                     <button className='bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-5.5 py-2.5 uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary'>Subscribe</button>
 
