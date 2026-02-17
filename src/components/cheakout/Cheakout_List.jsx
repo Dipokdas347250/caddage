@@ -159,7 +159,7 @@ const Cheakout_List = () => {
                                     <input type="checkbox" />
                                     <p className='text-[10px] text-tertiary font-nunito font-normal'>Shipping & taxes calculated at checkout</p>
                                 </div>
-                                <button className="w-full bg-secondary border border-secondary text-[14px] text-white font-normal font-nunito py-2.5 px-4 rounded-[2px] mt-8 cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary ">Proceed to Checkout</button>
+                                <button className="w-full bg-secondary border border-secondary text-[14px] text-white font-normal font-nunito py-2.5 px-4 rounded-xs mt-8 cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary ">Proceed to Checkout</button>
                             </div>
                         </div>
                     </div>

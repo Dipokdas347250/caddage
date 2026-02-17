@@ -7,11 +7,11 @@ import React from 'react'
 const layout = ({ children }) => {
   return (
     <div className="">
-        <Header />
-        <Navber /> 
+      <Header />
+      <Navber />
       {children}
-      <Icon_part/>
-      <Footer/>
+      <Icon_part />
+      <Footer />
     </div>
   )
 }
