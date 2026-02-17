@@ -1,4 +1,4 @@
-import Add_to_Cart from '@/components/add_to_cart/Add_to_Cart'
+import Product_Detalis from '@/components/add_to_cart/Product_Detalis'
 import Cart_page from '@/components/add_to_cart/Cart_page'
 import React from 'react'
 
@@ -7,7 +7,7 @@ const page = () => {
     
     <>
     <Cart_page/>
-    <Add_to_Cart/>
+    <Product_Detalis/>
     </>
   )
 }
