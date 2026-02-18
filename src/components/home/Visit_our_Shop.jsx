@@ -3,6 +3,7 @@ import Container from '../common/Container'
 import Image from 'next/image'
 import need from '../../../public/images/need.png';
 import needleft from '../../../public/images/needleft.png';
+import Link from 'next/link';
 
 const Visit_our_Shop = () => {
     return (
@@ -18,7 +19,10 @@ const Visit_our_Shop = () => {
                                 <p className='text-[18px] text-white font-normal font-nunito w-[90%] mt-5'>Cur tantas regiones barbarorum obiit, tot maria transmist summo bono fruitur id est voluptate barbarorum   </p>
 
                                 <div className="flex gap-5 items-center mt-7.5">
+                                    <Link href="/contact">
+                                    
                                     <button className='bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-11.5 py-4  cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary'>Contact Us</button>
+                                    </Link>
 
                                 </div>
 
