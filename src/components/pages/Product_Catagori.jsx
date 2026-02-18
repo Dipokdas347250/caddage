@@ -71,11 +71,15 @@ const Product_Catagoris = () => {
 
               </div>
               <div className="">
-                <label className=' py-2 pl-3 bg-[#F4F4F4] flex justify-between w-49 relative' >
+                {/* <label className=' py-2 pl-3 bg-[#F4F4F4] flex justify-between w-49 relative' >
                   <input className=' outline-none  ' type="Search" placeholder=' Search' />
                   <button className=' absolute top-0 right-0 bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-2.5 py-2.5 uppercase cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary'><IoSearch /></button>
 
-                </label>
+                </label> */}
+                 <label className='flex items-center' htmlFor="">
+                  < input type="Search" className=' p-2 border border-secondary outline-none  mt-2'placeholder=' Search'  />
+                 <button className='bg-secondary border border-secondary text-white font-normal font-nunito py-3 px-4  mt-2 cursor-pointer leading-[150%] duration-300 ease-in-out hover:bg-white hover:text-secondary '><IoSearch /></button>
+                 </label>
               </div>
 
             </div>

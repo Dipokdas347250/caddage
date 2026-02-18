@@ -4,6 +4,7 @@ import Image from 'next/image'
 import blog from '../../../public/images/blog.png';
 import { FaRegEye } from "react-icons/fa";
 import { MdOutlineCalendarMonth } from "react-icons/md";
+import Link from 'next/link';
 
 
 
@@ -20,7 +21,8 @@ const Leatest_Blog = () => {
                     </div>
                     <div className="flex justify-between items-center gap-7.5  mt-17.5">
                         <div className="w-1/3">
-                        <div className="px-3.25 pt-3.5 pb-5 bg-white shadow-xl cursor-pointer group duration-300 ease-in-out border border-white hover:border hover:border-secondary">
+                        <Link href={'/blog'}>
+                         <div className="px-3.25 pt-3.5 pb-5 bg-white shadow-xl cursor-pointer group duration-300 ease-in-out border border-white hover:border hover:border-secondary">
                             <div className="">
                                 <Image className=' ' src={blog} alt="blog" />
 
@@ -42,8 +44,10 @@ const Leatest_Blog = () => {
                                 <h2 className='text-[16px] text-primary font-inter font-bold leading-[100%] mt-6 duration-300 ease-in-out group-hover:text-secondary'>Read More--</h2>
                             </div>
                         </div>
+                        </Link>
                         </div>
                        <div className="w-1/3">
+                        <Link href={'/blog'}>
                         <div className="px-3.25 pt-3.5 pb-5 bg-white shadow-xl cursor-pointer group duration-300 ease-in-out border border-white hover:border hover:border-secondary">
                             <div className="">
                                 <Image className=' ' src={blog} alt="blog" />
@@ -66,8 +70,10 @@ const Leatest_Blog = () => {
                                 <h2 className='text-[16px] text-primary font-inter font-bold leading-[100%] mt-6 duration-300 ease-in-out group-hover:text-secondary'>Read More--</h2>
                             </div>
                         </div>
+                         </Link>
                        </div>
                       <div className="w-1/3">
+                       <Link href={'/blog'}>
                           <div className="px-3.25 pt-3.5 pb-5 bg-white shadow-xl cursor-pointer group duration-300 ease-in-out border border-white hover:border hover:border-secondary">
                             <div className="">
                                 <Image className=' ' src={blog} alt="blog" />
@@ -90,6 +96,7 @@ const Leatest_Blog = () => {
                                 <h2 className='text-[16px] text-primary font-inter font-bold leading-[100%] mt-6 duration-300 ease-in-out group-hover:text-secondary'>Read More--</h2>
                             </div>
                         </div>
+                         </Link>
                       </div>
                        
                        

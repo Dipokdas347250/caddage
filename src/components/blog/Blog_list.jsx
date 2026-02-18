@@ -2,12 +2,17 @@ import React from 'react'
 import Container from '../common/Container'
 import Image from 'next/image'
 import blog00 from '../../../public/images/blog00.png';
+import blog11 from '../../../public/images/blog11.png';
+import blog22 from '../../../public/images/blog22.png';
 import { FaRegEye } from "react-icons/fa";
 import { TbMessageDots } from "react-icons/tb";
-
+import { FaStar } from "react-icons/fa";
+import { FaFacebookF, FaBehance, FaPinterestP, FaTwitter } from "react-icons/fa";
 import { MdOutlineCalendarMonth } from "react-icons/md";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
+import { IoSearch } from "react-icons/io5";
+
 
 
 const Blog_list = () => {
@@ -20,7 +25,7 @@ const Blog_list = () => {
                             <div className="relative">
                                 <Image className='w-full ' src={blog00} alt="blog00" />
 
-                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[85%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
+                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
                                     <div className="flex gap-4 items-center">
                                         <div className=" flex gap-1 items-center ">
                                             <MdOutlineCalendarMonth className='text-secondary' />
@@ -45,7 +50,7 @@ const Blog_list = () => {
                             <div className="relative mt-47.5">
                                 <Image className='w-full ' src={blog00} alt="blog00" />
 
-                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[85%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
+                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
                                     <div className="flex gap-4 items-center">
                                         <div className=" flex gap-1 items-center ">
                                             <MdOutlineCalendarMonth className='text-secondary' />
@@ -70,7 +75,7 @@ const Blog_list = () => {
                             <div className="relative mt-47.5">
                                 <Image className='w-full ' src={blog00} alt="blog00" />
 
-                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[85%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
+                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
                                     <div className="flex gap-4 items-center">
                                         <div className=" flex gap-1 items-center ">
                                             <MdOutlineCalendarMonth className='text-secondary' />
@@ -95,7 +100,7 @@ const Blog_list = () => {
                             <div className="relative mt-47.5">
                                 <Image className='w-full ' src={blog00} alt="blog00" />
 
-                                <div className="py-8.5 pl-8.5 pr-30  bg-white shadow-2xl w-[85%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
+                                <div className="py-8.5 pl-8.5 pr-30  bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
                                     <div className="flex gap-4 items-center">
                                         <div className=" flex gap-1 items-center ">
                                             <MdOutlineCalendarMonth className='text-secondary' />
@@ -153,7 +158,133 @@ const Blog_list = () => {
 
                         </div>
                         <div className="w-[35%]">
-                            <div className="">
+                            <div className="pt-7 px-13.5 pb-10 bg-white shadow-2xl">
+                                <div className=" flex justify-center">
+                                    <Image className=' ' src={blog11} alt="blog11" />
+                                </div>
+                                <h2 className='text-[20px] text-primary font-bold font-inter mt-5 text-center'>Jehnny Rose</h2>
+                                <h3 className='text-[14px] text-secondary font-normal font-nunito text-center'>Traveller/Photographer</h3>
+                                <div className="flex justify-center gap-1 items-center mx-auto mt-4 ml-[50%] translate-x-[-50%]">
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+
+                                </div>
+                                <p className='text-[14px] text-tertiary font-normal font-inter text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                <div className="flex justify-center items-center gap-5 mt-7.5">
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaFacebookF />
+                                    </div>
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaTwitter />
+                                    </div>
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaBehance />
+                                    </div>
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaPinterestP />
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div className=" py-10 px-5  bg-white shadow-2xl mt-7.5">
+                                <h2 className='text-[20px] text-primary font-bold font-inter mb-6 border-b border-secondary pb-2 '>Search</h2>
+
+                                <label className='flex items-center ' htmlFor="">
+                                    < input type="Search" className=' w-full p-2 border border-secondary outline-none  mt-2' placeholder=' Search For Posts' />
+                                    <button className='bg-secondary border border-secondary text-white font-normal font-nunito py-3 px-6  mt-2 cursor-pointer leading-[150%] duration-300 ease-in-out hover:bg-white hover:text-secondary '><IoSearch /></button>
+                                </label>
+                            </div>
+                            <div className=" py-10 px-5  bg-white shadow-2xl mt-7.5">
+                                <h2 className='text-[20px] text-primary font-bold font-inter mb-6 border-b border-secondary pb-2 '>Catagories</h2>
+                                <div className="space-y-4.5">
+                                    <h4 className='py-2.5 pl-5 bg-[#e9ebe4] rounded-xs text-[14px] text-secondary font-normal font-nunito duration-300 ease-in-out hover:text-white hover:bg-secondary cursor-pointer'>Vegetables items (14)</h4>
+                                    <h4 className='py-2.5 pl-5 bg-[#e9ebe4] rounded-xs text-[14px] text-secondary font-normal font-nunito duration-300 ease-in-out hover:text-white hover:bg-secondary cursor-pointer'>Herbel Medicine (21)</h4>
+                                    <h4 className='py-2.5 pl-5 bg-[#e9ebe4] rounded-xs text-[14px] text-secondary font-normal font-nunito duration-300 ease-in-out hover:text-white hover:bg-secondary cursor-pointer'>Olive Oil massage (17)</h4>
+                                    <h4 className='py-2.5 pl-5 bg-[#e9ebe4] rounded-xs text-[14px] text-secondary font-normal font-nunito duration-300 ease-in-out hover:text-white hover:bg-secondary cursor-pointer'>Organic Foods (09)</h4>
+                                    <h4 className='py-2.5 pl-5 bg-[#e9ebe4] rounded-xs text-[14px] text-secondary font-normal font-nunito duration-300 ease-in-out hover:text-white hover:bg-secondary cursor-pointer'>Fishes & meats (265)</h4>
+                                </div>
+
+
+                            </div>
+
+                            <div className=" py-12 px-6  bg-white shadow-2xl mt-7.5">
+                                <h2 className='text-[20px] text-primary font-bold font-inter mb-6 border-b border-secondary pb-2 '>Leatest Blogs</h2>
+
+                                <div className="flex items-center gap-3">
+                                    <Image className=' ' src={blog22} alt="blog22" />
+                                    <div className="">
+                                        <div className=" flex gap-1 items-center ">
+                                            <MdOutlineCalendarMonth className='text-secondary text-[10px]' />
+                                            <p className='text-[9px] text-[#647589] font-normal font-nunito'>July 27, 2020</p>
+                                        </div>
+                                        <h3 className='text-[14px] text-primary font-bold font-inter leading-[120%] mt-1.5'>It is a long established Cont popular traditional </h3>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3 ">
+                                    <Image className=' ' src={blog22} alt="blog22" />
+                                    <div className="">
+                                        <div className=" flex gap-1 items-center ">
+                                            <MdOutlineCalendarMonth className='text-secondary text-[10px]' />
+                                            <p className='text-[9px] text-[#647589] font-normal font-nunito'>July 27, 2020</p>
+                                        </div>
+                                        <h3 className='text-[14px] text-primary font-bold font-inter leading-[120%] mt-1.5'>Contrary to popular tradi lorem ipsum is not simply  </h3>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3 ">
+                                    <Image className=' ' src={blog22} alt="blog22" />
+                                    <div className="">
+                                        <div className=" flex gap-1 items-center ">
+                                            <MdOutlineCalendarMonth className='text-secondary text-[10px]' />
+                                            <p className='text-[9px] text-[#647589] font-normal font-nunito'>July 27, 2020</p>
+                                        </div>
+                                        <h3 className='text-[14px] text-primary font-bold font-inter leading-[120%] mt-1.5'>Lorem Ipsum has been the industry's standard dummy </h3>
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-3 ">
+                                    <Image className=' ' src={blog22} alt="blog22" />
+                                    <div className="">
+                                        <div className=" flex gap-1 items-center ">
+                                            <MdOutlineCalendarMonth className='text-secondary text-[10px]' />
+                                            <p className='text-[9px] text-[#647589] font-normal font-nunito'>July 27, 2020</p>
+                                        </div>
+                                        <h3 className='text-[14px] text-primary font-bold font-inter leading-[120%] mt-1.5'>It is a long established Cont popular traditional  </h3>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                             <div className=" py-10 px-5  bg-white shadow-2xl mt-7.5">
+                                <h2 className='text-[20px] text-primary font-bold font-inter mb-6 border-b border-secondary pb-2 '>Follow Us</h2>
+
+                               <div className="flex  items-center gap-5 mt-7.5">
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaFacebookF />
+                                    </div>
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaTwitter />
+                                    </div>
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaBehance />
+                                    </div>
+                                    <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                        <FaPinterestP />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+                            <div className="py-10 px-5  bg-white shadow-2xl mt-7.5">
                                 <h2 className='text-[20px] text-primary font-bold font-inter mb-5  '>Releated Tags</h2>
                                 <div className=" ">
                                     <div className="flex items-center gap-3">
