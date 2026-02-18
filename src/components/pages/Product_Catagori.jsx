@@ -242,190 +242,190 @@ const Product_Catagoris = () => {
               </div>
             </div>
             <div className="w-[70%]">
-            <Link href="/Single_Shop">
-              <div className="">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
-                  <div className="">
-                    <Image className='' src={pro} alt="pro" />
-
-                  </div>
-                  <div className="">
-                    <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Dragon Fruit Vietnam</h2>
-                    <div className=" flex items-center gap-2 mt-3.5">
-                      <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
-                      <div className="flex gap-1 items-center ">
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <h4>(24)</h4>
-                      </div>
-                    </div>
-                    <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
-                    <div className="flex items-center gap-5 mt-3.5">
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <FaRegHeart />
-                      </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <PiShoppingCart />
-                      </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <IoMdSearch />
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Link>
-             <Link href="/Single_Shop">
-              <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
-                  <div className="">
-                    <Image className='' src={pro} alt="pro" />
-
-                  </div>
-                  <div className="">
-                    <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Fresh Package Juice</h2>
-                    <div className=" flex items-center gap-2 mt-3.5">
-                      <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
-                      <div className="flex gap-1 items-center ">
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <h4>(24)</h4>
-                      </div>
-                    </div>
-                    <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
-                    <div className="flex items-center gap-5 mt-3.5">
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <FaRegHeart />
-                      </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <PiShoppingCart />
-                      </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <IoMdSearch />
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-             </Link>
               <Link href="/Single_Shop">
-              <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
-                  <div className="">
-                    <Image className='' src={pro} alt="pro" />
+                <div className="">
+                  <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
+                    <div className="">
+                      <Image className='' src={pro} alt="pro" />
 
-                  </div>
-                  <div className="">
-                    <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Fresh Vegetables</h2>
-                    <div className=" flex items-center gap-2 mt-3.5">
-                      <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
-                      <div className="flex gap-1 items-center ">
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <h4>(24)</h4>
-                      </div>
                     </div>
-                    <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
-                    <div className="flex items-center gap-5 mt-3.5">
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <FaRegHeart />
+                    <div className="">
+                      <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Dragon Fruit Vietnam</h2>
+                      <div className=" flex items-center gap-2 mt-3.5">
+                        <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
+                        <div className="flex gap-1 items-center ">
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <h4>(24)</h4>
+                        </div>
                       </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <PiShoppingCart />
-                      </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <IoMdSearch />
-                      </div>
+                      <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
+                      <div className="flex items-center gap-5 mt-3.5">
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <FaRegHeart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <PiShoppingCart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <IoMdSearch />
+                        </div>
 
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </Link>
               <Link href="/Single_Shop">
-              <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
-                  <div className="">
-                    <Image className='' src={pro} alt="pro" />
+                <div className="mt-7.5">
+                  <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
+                    <div className="">
+                      <Image className='' src={pro} alt="pro" />
 
-                  </div>
-                  <div className="">
-                    <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Yellow Appels Juice</h2>
-                    <div className=" flex items-center gap-2 mt-3.5">
-                      <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
-                      <div className="flex gap-1 items-center ">
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <h4>(24)</h4>
-                      </div>
                     </div>
-                    <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
-                    <div className="flex items-center gap-5 mt-3.5">
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <FaRegHeart />
+                    <div className="">
+                      <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Fresh Package Juice</h2>
+                      <div className=" flex items-center gap-2 mt-3.5">
+                        <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
+                        <div className="flex gap-1 items-center ">
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <h4>(24)</h4>
+                        </div>
                       </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <PiShoppingCart />
-                      </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <IoMdSearch />
-                      </div>
+                      <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
+                      <div className="flex items-center gap-5 mt-3.5">
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <FaRegHeart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <PiShoppingCart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <IoMdSearch />
+                        </div>
 
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </Link>
               <Link href="/Single_Shop">
-              <div className="mt-7.5">
-                <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
-                  <div className="">
-                    <Image className='' src={pro} alt="pro" />
+                <div className="mt-7.5">
+                  <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
+                    <div className="">
+                      <Image className='' src={pro} alt="pro" />
 
-                  </div>
-                  <div className="">
-                    <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Desi Bedana Group</h2>
-                    <div className=" flex items-center gap-2 mt-3.5">
-                      <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
-                      <div className="flex gap-1 items-center ">
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <FaStar />
-                        <h4>(24)</h4>
-                      </div>
                     </div>
-                    <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
-                    <div className="flex items-center gap-5 mt-3.5">
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <FaRegHeart />
+                    <div className="">
+                      <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Fresh Vegetables</h2>
+                      <div className=" flex items-center gap-2 mt-3.5">
+                        <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
+                        <div className="flex gap-1 items-center ">
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <h4>(24)</h4>
+                        </div>
                       </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <PiShoppingCart />
-                      </div>
-                      <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                        <IoMdSearch />
-                      </div>
+                      <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
+                      <div className="flex items-center gap-5 mt-3.5">
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <FaRegHeart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <PiShoppingCart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <IoMdSearch />
+                        </div>
 
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
+              <Link href="/Single_Shop">
+                <div className="mt-7.5">
+                  <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
+                    <div className="">
+                      <Image className='' src={pro} alt="pro" />
+
+                    </div>
+                    <div className="">
+                      <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Yellow Appels Juice</h2>
+                      <div className=" flex items-center gap-2 mt-3.5">
+                        <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
+                        <div className="flex gap-1 items-center ">
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <h4>(24)</h4>
+                        </div>
+                      </div>
+                      <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
+                      <div className="flex items-center gap-5 mt-3.5">
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <FaRegHeart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <PiShoppingCart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <IoMdSearch />
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/Single_Shop">
+                <div className="mt-7.5">
+                  <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
+                    <div className="">
+                      <Image className='' src={pro} alt="pro" />
+
+                    </div>
+                    <div className="">
+                      <h2 className=' text-[22px] text-primary font-bold font-inter leading-[100%]'>Desi Bedana Group</h2>
+                      <div className=" flex items-center gap-2 mt-3.5">
+                        <h4 className=' text-[14px] text-primary font-normal font-nunito mt-2  duration-300 ease-in-out group-hover:text-secondary'>$43.00 <span className='text-[14px] text-[#FE1717] line-through ml-2.5 '>$58.00</span></h4>
+                        <div className="flex gap-1 items-center ">
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <FaStar />
+                          <h4>(24)</h4>
+                        </div>
+                      </div>
+                      <p className='text-[16px] text-[#666E77] font-normal font-nunito mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa enim. Nullam id varius nunc id varius nunc.</p>
+                      <div className="flex items-center gap-5 mt-3.5">
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <FaRegHeart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <PiShoppingCart />
+                        </div>
+                        <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
+                          <IoMdSearch />
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </Link>
             </div>
           </div>
