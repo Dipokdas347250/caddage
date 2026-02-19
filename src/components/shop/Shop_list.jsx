@@ -57,8 +57,8 @@ const Shop_list = () => {
 
                                     </label> */}
                                     <label className='flex items-center' htmlFor="">
-                                        < input type="Search" className=' p-2 border border-secondary outline-none  mt-2' placeholder=' Search' />
-                                        <button className='bg-secondary border border-secondary text-white font-normal font-nunito py-3 px-4  mt-2 cursor-pointer leading-[150%] duration-300 ease-in-out hover:bg-white hover:text-secondary '><IoSearch /></button>
+                                        < input type="Search" className='w-49 p-2 border border-secondary outline-none  mt-2' placeholder=' Search' />
+                                        <button className='bg-secondary border border-secondary text-white font-normal font-nunito py-3 px-4  mt-2 cursor-pointer  duration-300 ease-in-out hover:bg-white hover:text-secondary '><IoSearch /></button>
                                     </label>
                                 </div>
 

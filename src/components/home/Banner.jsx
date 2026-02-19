@@ -22,7 +22,7 @@ import { FaArrowRight ,FaArrowLeft } from "react-icons/fa";
 function SampleNextArrow(props) {
     const {  onClick } = props;
     return (
-      <div className=" absolute h-10 w-10 bg-secondary rounded-full  text-[#fff] top-[50%] translate-y-[-50%] 2xl:-right-20 -right-2.5  cursor-pointer z-50 duration-300 ease-in-out  hover:bg-[#0A472E]" onClick={onClick}>
+      <div className=" absolute h-10 w-10 bg-secondary rounded-full  text-[#fff] top-[50%] translate-y-[-50%] 2xl:-right-20 -right-2.5  cursor-pointer z-10 duration-300 ease-in-out  hover:bg-[#0A472E]" onClick={onClick}>
       <FaArrowRight className=' absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]' />
      </div>
     );
@@ -31,7 +31,7 @@ function SampleNextArrow(props) {
   function SamplePrevArrow(props) {
     const {  onClick } = props;
     return (
-      <div className=" absolute h-10 w-10 bg-secondary rounded-full  text-[#fff] top-[50%] translate-y-[-50%] 2xl:-left-20 -left-2.5  cursor-pointer z-50 duration-300 ease-in-out  hover:bg-[#0A472E]" onClick={onClick}>
+      <div className=" absolute h-10 w-10 bg-secondary rounded-full  text-[#fff] top-[50%] translate-y-[-50%] 2xl:-left-20 -left-2.5  cursor-pointer z-10 duration-300 ease-in-out  hover:bg-[#0A472E]" onClick={onClick}>
        <FaArrowLeft className=' absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%]' />
       </div>
      

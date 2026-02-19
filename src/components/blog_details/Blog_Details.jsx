@@ -23,10 +23,10 @@ const Blog_list = () => {
                 <Container>
                     <div className="flex items-start gap-10">
                         <div className="w-[65%]">
-                            <div className="relative">
+                            <div className="">
                                 <Image className='w-full ' src={blog00} alt="blog00" />
 
-                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
+                                <div className="py-8.5 px-8.5 bg-white shadow-2xl  ">
                                     <div className="flex gap-4 items-center">
                                         <div className=" flex gap-1 items-center ">
                                             <MdOutlineCalendarMonth className='text-secondary' />
@@ -38,132 +38,53 @@ const Blog_list = () => {
                                         </div>
 
                                     </div>
-                                    <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%] mt-3.25 duration-300 ease-in-out  group-hover:text-secondary '>Lorem Ipsum has been the industry's standard dummy text ever since</h3>
-                                    <p className='text-[14px] text-[#647589] font-normal font-nunito mt-5 duration-300 ease-in-out group-hover:text-secondary  '>It is a long established fact that a reader will be distracted by the readable looking at its layout. The point of using Lorem Ipsum is that </p>
+                                    <div className="">
+                                        <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%] mt-3.25 pr-25  '>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+                                        <p className='text-[14px] text-[#647589] font-normal font-nunito mt-9 pr-20   '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less letters, as opposed to using ‘Content here, content here’, making it look like readable English. </p>
 
-                                   <Link href="/blog_details">
-                                    <div className="flex items-center gap-2 mt-6 duration-300 ease-in-out hover:text-secondary">
-                                        <h2 className='text-[16px] text-primary font-inter font-bold leading-[100%]  duration-300 ease-in-out group-hover:text-secondary'>Read More</h2>
-                                        <IoIosArrowDroprightCircle />
+                                        <p className='text-[14px] text-[#647589] font-normal font-nunito mt-10 pr-20   '>It is a long established fact that a reader will be distracted by the readable content of a page looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal letters, as opposed to using ‘Content here, content here’, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as </p>
                                     </div>
-                                   </Link>
-                                </div>
 
-                            </div>
-                            <div className="relative mt-47.5">
-                                <Image className='w-full ' src={blog00} alt="blog00" />
+                                    <div className="mt-12">
+                                        <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%]    '>A cleansing hot shower or bath</h3>
+                                        <p className='text-[14px] text-[#647589] font-normal font-nunito mt-9  pr-20  '>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less letters, as opposed to using ‘Content here, content here’, making it look like readable English. </p>
 
-                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
-                                    <div className="flex gap-4 items-center">
-                                        <div className=" flex gap-1 items-center ">
-                                            <MdOutlineCalendarMonth className='text-secondary' />
-                                            <p className='text-[14px] text-[#647589] font-normal font-nunito'>July 27, 2020</p>
-                                        </div>
-                                        <div className=" flex gap-1 items-center border-l-2 border-secondary pl-4">
-                                            <TbMessageDots className='text-secondary' />
-                                            <p className='text-[14px] text-[#647589] font-normal font-nunito'>1 Comments</p>
-                                        </div>
 
                                     </div>
-                                    <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%] mt-3.25 underline duration-300 ease-in-out  group-hover:text-secondary '>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing</h3>
-                                    <p className='text-[14px] text-[#647589] font-normal font-nunito mt-5 duration-300 ease-in-out group-hover:text-secondary  '>It is a long established fact that a reader will be distracted by the readable looking at its layout. The point of using Lorem Ipsum is that </p>
 
-                                   <Link href="/blog_details">
-                                    <div className="flex items-center gap-2 mt-6 duration-300 ease-in-out hover:text-secondary">
-                                        <h2 className='text-[16px] text-primary font-inter font-bold leading-[100%]  duration-300 ease-in-out group-hover:text-secondary'>Read More</h2>
-                                        <IoIosArrowDroprightCircle />
+                                    <div className="pt-7 pb-7.5 pl-5 pr-23.5 bg-[#f6faed] mt-15 border-l-6 border-secondary ">
+                                        <p className='text-[17px] text-[#647589] font-normal font-nunito  '>Integer is metus site turpis facilisis customers. elementum an mauris in venenatis consectetur Praesent condimentum bibendum Morbi sit amet commodo pellentes at fringilla tincidunt risus." </p>
                                     </div>
-                                   </Link>
-                                </div>
 
-                            </div>
-                            <div className="relative mt-47.5">
-                                <Image className='w-full ' src={blog00} alt="blog00" />
+                                    <div className="mt-12">
+                                        <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%]    '>A cleansing hot shower or bath</h3>
+                                        <ul className='text-[15px] text-[#647589] font-normal font-nunito  list-disc ml-9.5 space-y-3 mt-9'>
+                                            <li>Check Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                                            <li>Check Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                                            <li>Check Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                                            <li>Check Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                                            <li>Check Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</li>
+                                        </ul>
 
-                                <div className="py-8.5 pl-8.5 pr-41.25 bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
-                                    <div className="flex gap-4 items-center">
-                                        <div className=" flex gap-1 items-center ">
-                                            <MdOutlineCalendarMonth className='text-secondary' />
-                                            <p className='text-[14px] text-[#647589] font-normal font-nunito'>July 27, 2020</p>
-                                        </div>
-                                        <div className=" flex gap-1 items-center border-l-2 border-secondary pl-4">
-                                            <TbMessageDots className='text-secondary' />
-                                            <p className='text-[14px] text-[#647589] font-normal font-nunito'>1 Comments</p>
-                                        </div>
+                                        <p className='text-[14px] text-[#647589] font-normal font-nunito mt-9  pr-20 leading-[150%]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labor
+                                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                            culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                            sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+                                            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
 
                                     </div>
-                                    <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%] mt-3.25  duration-300 ease-in-out  group-hover:text-secondary '>Generate Lorem Ipsum placeholder text for use in your graphic</h3>
-                                    <p className='text-[14px] text-[#647589] font-normal font-nunito mt-5 duration-300 ease-in-out group-hover:text-secondary  '>It is a long established fact that a reader will be distracted by the readable looking at its layout. The point of using Lorem Ipsum is that </p>
 
-                                    <Link href="/blog_details">
-                                    <div className="flex items-center gap-2 mt-6 duration-300 ease-in-out hover:text-secondary">
-                                        <h2 className='text-[16px] text-primary font-inter font-bold leading-[100%]  duration-300 ease-in-out group-hover:text-secondary'>Read More</h2>
-                                        <IoIosArrowDroprightCircle />
-                                    </div>
-                                   </Link>
-                                </div>
 
-                            </div>
-                            <div className="relative mt-47.5">
-                                <Image className='w-full ' src={blog00} alt="blog00" />
 
-                                <div className="py-8.5 pl-8.5 pr-30  bg-white shadow-2xl w-[90%] absolute -bottom-30 left-[50%] translate-x-[-50%] group">
-                                    <div className="flex gap-4 items-center">
-                                        <div className=" flex gap-1 items-center ">
-                                            <MdOutlineCalendarMonth className='text-secondary' />
-                                            <p className='text-[14px] text-[#647589] font-normal font-nunito'>July 27, 2020</p>
-                                        </div>
-                                        <div className=" flex gap-1 items-center border-l-2 border-secondary pl-4">
-                                            <TbMessageDots className='text-secondary' />
-                                            <p className='text-[14px] text-[#647589] font-normal font-nunito'>1 Comments</p>
-                                        </div>
-
-                                    </div>
-                                    <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%] mt-3.25  duration-300 ease-in-out  group-hover:text-secondary '>Simply popular belief tradition Reference about Lorem Ipsum, giving informat</h3>
-                                    <p className='text-[14px] text-[#647589] font-normal font-nunito mt-5 duration-300 ease-in-out group-hover:text-secondary  '>It is a long established fact that a reader will be distracted by the readable looking at its layout. The point of using Lorem Ipsum is that </p>
-
-                                   <Link href="/blog_details">
-                                    <div className="flex items-center gap-2 mt-6 duration-300 ease-in-out hover:text-secondary">
-                                        <h2 className='text-[16px] text-primary font-inter font-bold leading-[100%]  duration-300 ease-in-out group-hover:text-secondary'>Read More</h2>
-                                        <IoIosArrowDroprightCircle />
-                                    </div>
-                                   </Link>
                                 </div>
 
                             </div>
 
-                            <div className="mt-50">
-                                <div className="flex justify-center items-center gap-5 ">
 
 
-                                    <div className="p-2.5 bg-white text-secondary shadow-xl border border-secondary cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
-                                        <FaArrowLeft />
-                                    </div>
-                                    <div className="p-2.5 bg-secondary text-white shadow-xl border border-secondary cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                                        <h2>01</h2>
-                                    </div>
-                                    <div className="p-2.5 bg-secondary text-white shadow-xl border border-secondary cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                                        <h2>02</h2>
-                                    </div>
-                                    <div className="p-2.5 bg-secondary text-white shadow-xl border border-secondary cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                                        <h2>03</h2>
-                                    </div>
-                                    <div className="p-2.5 bg-secondary text-white shadow-xl border border-secondary cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                                        <h2>04</h2>
-                                    </div>
-                                    <div className="p-2.5 bg-secondary text-white shadow-xl border border-secondary cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                                        <h2>05</h2>
-                                    </div>
-                                    <div className="p-2.5 bg-white text-secondary shadow-xl border border-secondary cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
-                                        <FaArrowRight />
-                                    </div>
-
-
-
-
-
-                                </div>
-                            </div>
 
                         </div>
                         <div className="w-[35%]">
@@ -266,10 +187,10 @@ const Blog_list = () => {
 
                             </div>
 
-                             <div className=" py-10 px-5  bg-white shadow-2xl mt-7.5">
+                            <div className=" py-10 px-5  bg-white shadow-2xl mt-7.5">
                                 <h2 className='text-[20px] text-primary font-bold font-inter mb-6 border-b border-secondary pb-2 '>Follow Us</h2>
 
-                               <div className="flex  items-center gap-5 mt-7.5">
+                                <div className="flex  items-center gap-5 mt-7.5">
                                     <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
                                         <FaFacebookF />
                                     </div>
