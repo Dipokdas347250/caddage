@@ -3,6 +3,7 @@ import Container from '../common/Container'
 import Image from 'next/image'
 import blog00 from '../../../public/images/blog00.png';
 import blog11 from '../../../public/images/blog11.png';
+import blog111 from '../../../public/images/blog111.png';
 import blog22 from '../../../public/images/blog22.png';
 import { FaRegEye } from "react-icons/fa";
 import { TbMessageDots } from "react-icons/tb";
@@ -74,6 +75,117 @@ const Blog_list = () => {
                                             sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
                                             inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 
+
+                                    </div>
+
+                                    <div className="mt-16.25 flex justify-between gap-11">
+                                        <div className="w-1/2">
+
+                                            <Image className=' ' src={blog111} alt="blog111" />
+                                        </div>
+                                        <div className="w-1/2">
+
+                                            <Image className=' ' src={blog111} alt="blog111" />
+                                        </div>
+                                    </div>
+
+                                    <div className="flex justify-center items-center gap-5 mt-7.5">
+                                        <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                            <FaFacebookF />
+                                        </div>
+                                        <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                            <FaTwitter />
+                                        </div>
+                                        <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                            <FaBehance />
+                                        </div>
+                                        <div className="p-2.5 bg-white text-secondary border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-secondary hover:text-white">
+                                            <FaPinterestP />
+                                        </div>
+                                    </div>
+
+                                    <div className=" mt-15.5">
+                                        <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%] border-l-4 border-secondary pl-3   '>Reviews</h3>
+
+                                        <div className=" flex items-start gap-4 mt-8.5 border-b border-secondary pb-12">
+                                            <Image className=' ' src={blog11} alt="blog11" />
+                                            <div className="">
+                                                <div className="flex items-center gap-5.5">
+                                                    <h2 className='text-[20px] text-primary font-bold font-inter '>Jehnny Rose</h2>
+                                                    <div className="flex justify-center gap-1 items-center ">
+                                                        <FaStar />
+                                                        <FaStar />
+                                                        <FaStar />
+                                                        <FaStar />
+                                                        <FaStar />
+
+                                                    </div>
+
+                                                </div>
+                                                <h4 className='text-[14px] text-tertiary font-normal font-nunito mt-2'>June 26, 2020</h4>
+                                                <p className='text-[14px] text-tertiary font-normal font-nunito mt-3.5' >The second bedroom is a corner room with double windows. The kitchen has fabulous space new appliances, and a laundry area. Other features include rich herringbone floors</p>
+                                            </div>
+                                        </div>
+                                        <div className=" flex items-start gap-4 mt-8.5 ">
+                                            <Image className=' ' src={blog11} alt="blog11" />
+                                            <div className="">
+                                                <div className="flex items-center gap-5.5">
+                                                    <h2 className='text-[20px] text-primary font-bold font-inter '>Jehnny Rose</h2>
+                                                    <div className="flex justify-center gap-1 items-center ">
+                                                        <FaStar />
+                                                        <FaStar />
+                                                        <FaStar />
+                                                        <FaStar />
+                                                        <FaStar />
+
+                                                    </div>
+
+                                                </div>
+                                                <h4 className='text-[14px] text-tertiary font-normal font-nunito mt-2'>June 26, 2020</h4>
+                                                <p className='text-[14px] text-tertiary font-normal font-nunito mt-3.5' >The second bedroom is a corner room with double windows. The kitchen has fabulous space new appliances, and a laundry area. Other features include rich herringbone floors</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div className="pt-11.5 px-8 pb-21 bg-[#F4F4FC] mt-17.5">
+
+                                        <div className=" ">
+                                            <h3 className='text-[24px] text-primary font-inter font-bold leading-[120%] border-l-4 border-secondary pl-3   '>Write A Review</h3>
+                                            <div className="flex gap-7.5 mt-10 ">
+                                                <input
+                                                    className="w-1/2 outline-none border-b border-[#5C727D] pb-2  focus:border-secondary transition-all duration-300"
+                                                    type="text"
+                                                    placeholder="Your name"
+                                                />
+                                                <input
+                                                    className="w-1/2 outline-none border-b border-[#5C727D] pb-2  focus:border-secondary transition-all duration-300"
+                                                    type="text"
+                                                    placeholder=" Your Email"
+                                                />
+                                            </div>
+
+                                            <div className="mt-10">
+                                                <textarea
+                                                    className="w-full py-3.5  outline-none  border-b border-[#5C727D] pb-2  focus:border-secondary transition-all duration-300 resize-none"
+                                                    rows="5"
+                                                    placeholder="Write Comment..."
+                                                ></textarea>
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                        <div className="flex gap-2 items-center mt-8">
+                                            <input className='' type="checkbox" />
+                                            <p className='text-[14px] text-tertiary font-nunito font-normal'>Save my name, email, and website in this browser for the next time I comment.</p>
+                                        </div>
+
+                                        <button className=" bg-secondary border border-secondary text-[14px] text-white font-normal font-nunito py-2.5 px-6.25 rounded-xs mt-12 cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary ">Post Comment</button>
 
                                     </div>
 
