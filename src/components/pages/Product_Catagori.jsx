@@ -15,7 +15,14 @@ import Link from 'next/link';
 
 
 
+
+
+
+
 const Product_Catagoris = () => {
+ 
+  
+
 
   const categories = [
     { name: "Allium", count: 5 },
@@ -30,6 +37,17 @@ const Product_Catagoris = () => {
   ];
 
   const [activeCategory, setActiveCategory] = useState(null);
+
+ 
+  const min = 0;
+  const max = 8000;
+
+  const [minVal, setMinVal] = useState(1000);
+  const [maxVal, setMaxVal] = useState(6000);
+
+  const getPercent = (value) => {
+    return ((value - min) / (max - min)) * 100;
+  };
 
 
   return (
@@ -186,11 +204,88 @@ const Product_Catagoris = () => {
 
 
                 </div>
-                <div className="border-b border-[#272D61]">
+                {/* <div className="border-b border-[#272D61]">
                   <h2 className='text-[20px] text-primary font-bold font-inter my-5 pb-5 border-b-2 border-secondary'>Price/SQ Ft Filter</h2>
                   <p className='text-[14px] text-[#272D61] font-nunito font-normal mb-5'>From $0 to $8000</p>
 
-                </div>
+                </div> */}
+                
+
+
+                     <div className="border-b border-[#272D61] pb-8">
+
+      <h2 className="text-[20px] text-primary font-bold font-inter my-5 pb-5 border-b-2 border-secondary">
+        Price/SQ Ft Filter
+      </h2>
+
+      <p className="text-[14px] text-[#272D61] font-nunito font-normal mb-6">
+        From ${minVal} to ${maxVal}
+      </p>
+
+      <div className="relative w-full h-2 bg-gray-200 rounded-full">
+
+        {/* Active Range Track */}
+        <div
+          className="absolute h-2 bg-secondary rounded-full"
+          style={{
+            left: `${getPercent(minVal)}%`,
+            width: `${getPercent(maxVal) - getPercent(minVal)}%`,
+          }}
+        />
+
+        {/* Min Range */}
+        <input
+          type="range"
+          min={min}
+          max={max}
+          value={minVal}
+          onChange={(e) =>
+            setMinVal(Math.min(Number(e.target.value), maxVal - 100))
+          }
+          className="absolute w-full h-2 appearance-none bg-transparent pointer-events-none slider-thumb"
+        />
+
+        {/* Max Range */}
+        <input
+          type="range"
+          min={min}
+          max={max}
+          value={maxVal}
+          onChange={(e) =>
+            setMaxVal(Math.max(Number(e.target.value), minVal + 100))
+          }
+          className="absolute w-full h-2 appearance-none bg-transparent pointer-events-none slider-thumb"
+        />
+      </div>
+
+      {/* Custom Thumb Style */}
+      <style jsx>{`
+        input[type="range"]::-webkit-slider-thumb {
+          appearance: none;
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+          background: #80B500;
+          cursor: pointer;
+          pointer-events: auto;
+          border: 3px solid white;
+          box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+          height: 18px;
+          width: 18px;
+          border-radius: 50%;
+          background: #80B500;
+          cursor: pointer;
+          pointer-events: auto;
+          border: none;
+        }
+      `}</style>
+    </div>
+
+
+
                 <div className="border-b border-[#272D61]">
                   <h2 className='text-[20px] text-primary font-bold font-inter my-5  '>Filter By Color</h2>
                   <div className="flex items-center gap-6.5 ">
