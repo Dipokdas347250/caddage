@@ -13,7 +13,7 @@ import Link from 'next/link';
 const Navber = () => {
     return (
         <>
-            <nav className='py-8.5 sticky top-0 z-50 bg-white shadow-sm'>
+            <nav className='py-3 sticky top-0 z-50 bg-white shadow-sm'>
                 <Container>
                     <div className="flex justify-between items-center">
                         <div className="">

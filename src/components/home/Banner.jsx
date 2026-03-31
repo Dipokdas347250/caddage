@@ -66,7 +66,7 @@ const Banner = () => {
       <div className=" relative">
           <Slider {...settings}>
           <div className="">
-             <div className=" flex justify-between items-center relative z-10 px-3">
+          <div className=" flex justify-between items-center relative z-10 px-3">
           <div className="">
             <div className="flex items-center">
              <Image src={herb} alt="herb"  /> 

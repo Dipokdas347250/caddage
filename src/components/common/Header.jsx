@@ -15,7 +15,7 @@ import ban from '../../../public/images/ban1.png';
 const Header = () => {
   return (
     <>
-    <header className='py-4 bg-[#0A472E]'>
+    <header className='py-3 bg-[#0A472E]'>
         <Container>
             <div className="flex justify-between items-center text-white">
                 <div className="flex gap-4 items-center">
