@@ -25,3 +25,10 @@
   --font-nunito: "Nunito", sans-serif;
   --font-inter: "Inter", monospace;
 }
+.icon-style {
+  @apply p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 hover:bg-white hover:text-secondary;
+}
+
+.btn-primary {
+  @apply bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7 py-3 uppercase cursor-pointer duration-300 hover:bg-white hover:text-secondary;
+}
