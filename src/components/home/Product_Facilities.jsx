@@ -20,8 +20,8 @@ const Product_Facilities = () => {
                     A highly efficient slip-ring scanner for today's diagnostic requirements.
                 </p>
         </div>
-        <div className="flex justify-between items-center">
-            <div className="w-[30%]">
+        <div className="lg:flex justify-between items-center">
+            <div className="lg:w-[30%] w-full">
                 <div className="">
                 <div className="flex items-center ">
                     <div className="">
@@ -56,11 +56,11 @@ const Product_Facilities = () => {
                 </div>
             </div>
             </div>
-            <div className="w-[40%]">
+            <div className="lg:w-[40%] w-full">
                 <Image className=' w-full' src={jhu} alt="jhu" />
 
             </div>
-           <div className="w-[30%]">
+           <div className="lg:w-[30%] w-full">
                 <div className="">
                 <div className="flex items-center ">
                     <div className="">
