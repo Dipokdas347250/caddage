@@ -19,8 +19,8 @@ const ChooseUs = () => {
                 <h2 className='text-[48px] text-primary font-bold font-inter text-center'>Why Choose us</h2>
                 <p className='text-[16px] text-tertiary font-normal font-nunito mt-5 text-center'>A highly efficient slip-ring scanner for today's diagnostic requirements.</p>
             </div>
-            <div className=" flex justify-between gap-7.5 mt-14">
-                <div className="w-1/2">
+            <div className=" lg:flex justify-between gap-7.5 mt-14">
+                <div className="lg:w-1/2 w-full">
                 <div className="group ">
                     <div className="duration-300 ease-in-out  group-hover:bg-secondary py-13.5 px-16 bg-white flex items-center gap-6 shadow-xl">
                     <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
@@ -33,7 +33,7 @@ const ChooseUs = () => {
                 </div>
                 </div>
                 </div>
-                <div className="w-1/2">
+                <div className="lg:w-1/2 w-full">
                  <div className="group ">
                     <div className="duration-300 ease-in-out  group-hover:bg-secondary py-13.5 px-16 bg-white flex items-center gap-6 shadow-xl">
                     <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
@@ -46,8 +46,8 @@ const ChooseUs = () => {
                 </div>
                 </div></div>
             </div>
-            <div className=" flex justify-between gap-7.5 mt-7.5">
-                <div className="w-1/2">
+            <div className=" lg:flex justify-between gap-7.5 mt-7.5">
+                <div className="lg:w-1/2 w-full">
                 <div className="group ">
                     <div className="duration-300 ease-in-out  group-hover:bg-secondary py-13.5 px-16 bg-white flex items-center gap-6 shadow-xl">
                     <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
@@ -60,7 +60,7 @@ const ChooseUs = () => {
                 </div>
                 </div>
                 </div>
-                <div className="w-1/2">
+                <div className="lg:w-1/2 w-full">
                  <div className="group ">
                     <div className="duration-300 ease-in-out  group-hover:bg-secondary py-13.5 px-16 bg-white flex items-center gap-6 shadow-xl">
                     <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
