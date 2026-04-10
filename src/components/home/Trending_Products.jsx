@@ -15,8 +15,8 @@ const Trending_Products = () => {
                         </p>
                     </div>
                     <div className="mt-15">
-                        <div className=" flex justify-between items-center gap-7.5 ">
-                            <div className="w-1/3">
+                        <div className="lg:flex justify-between items-center gap-7.5 ">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
@@ -28,7 +28,7 @@ const Trending_Products = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/3">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
@@ -40,7 +40,7 @@ const Trending_Products = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/3">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
@@ -55,8 +55,8 @@ const Trending_Products = () => {
 
 
                         </div>
-                        <div className=" flex justify-between items-center gap-7.5 mt-7.5 ">
-                            <div className="w-1/3">
+                        <div className="lg:flex justify-between items-center gap-7.5 mt-7.5 ">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
@@ -68,7 +68,7 @@ const Trending_Products = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/3">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
@@ -80,7 +80,7 @@ const Trending_Products = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/3">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
