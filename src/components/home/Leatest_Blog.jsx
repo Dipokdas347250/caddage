@@ -19,8 +19,8 @@ const Leatest_Blog = () => {
                             A highly efficient slip-ring scanner for today's diagnostic requirements.
                         </p>
                     </div>
-                    <div className="flex justify-between items-center gap-7.5  mt-17.5">
-                        <div className="w-1/3">
+                    <div className="lg:flex justify-between items-center gap-7.5  mt-17.5">
+                        <div className="lg:w-1/3 w-full">
                         <Link href={'/blog'}>
                          <div className="px-3.25 pt-3.5 pb-5 bg-white shadow-xl cursor-pointer group duration-300 ease-in-out border border-white hover:border hover:border-secondary">
                             <div className="">
@@ -46,7 +46,7 @@ const Leatest_Blog = () => {
                         </div>
                         </Link>
                         </div>
-                       <div className="w-1/3">
+                       <div className="lg:w-1/3 w-full">
                         <Link href={'/blog'}>
                         <div className="px-3.25 pt-3.5 pb-5 bg-white shadow-xl cursor-pointer group duration-300 ease-in-out border border-white hover:border hover:border-secondary">
                             <div className="">
@@ -72,7 +72,7 @@ const Leatest_Blog = () => {
                         </div>
                          </Link>
                        </div>
-                      <div className="w-1/3">
+                      <div className="lg:w-1/3 w-full">
                        <Link href={'/blog'}>
                           <div className="px-3.25 pt-3.5 pb-5 bg-white shadow-xl cursor-pointer group duration-300 ease-in-out border border-white hover:border hover:border-secondary">
                             <div className="">

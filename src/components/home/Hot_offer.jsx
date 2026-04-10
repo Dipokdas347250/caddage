@@ -13,7 +13,7 @@ const Hot_offer = () => {
                             <Image className=' w-full' src={offer} alt="offer" />
 
                         </div>
-                        <div className=" w-1/2 ">
+                        <div className=" lg:w-1/2 w-full ">
                            <div className="py-30">
                              <h4 className='text-[18px] text-secondary font-bold font-nunito'>Todays Hot Deals</h4>
                             <h2 className='text-[50px] text-primary font-bold font-inter leading-[120%]'>Original Stock Honey Combo Package</h2>
