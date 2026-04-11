@@ -16,8 +16,8 @@ const Team_Member = () => {
                             A highly efficient slip-ring scanner for today's diagnostic requirements.
                         </p>
                     </div>
-                    <div className=" flex justify-between gap-20 items-center mt-14">
-                        <div className=" w-1/3">
+                    <div className=" lg:flex justify-between gap-20 items-center mt-14">
+                        <div className=" lg:w-1/3 w-full">
                             <div className="">
                                 <Image className=' ' src={team} alt="team" />
                             <h2 className='text-[28px] text-primary font-bold font-inter leading-[100%] text-center mt-5'>John Abraham</h2>
@@ -40,7 +40,7 @@ const Team_Member = () => {
                            </div>
                             </div>
                         </div>
-                        <div className=" w-1/3">
+                        <div className=" lg:w-1/3 w-full">
                             <div className="">
                                 <Image className=' ' src={team} alt="team" />
                             <h2 className='text-[28px] text-primary font-bold font-inter leading-[100%] text-center mt-5'>John Abraham</h2>
@@ -63,7 +63,7 @@ const Team_Member = () => {
                            </div>
                             </div>
                         </div>
-                        <div className=" w-1/3">
+                        <div className=" lg:w-1/3 w-full">
                             <div className="">
                                 <Image className=' ' src={team} alt="team" />
                             <h2 className='text-[28px] text-primary font-bold font-inter leading-[100%] text-center mt-5'>John Abraham</h2>
