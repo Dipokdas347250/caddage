@@ -15,7 +15,7 @@ export default function NotFound() {
         className="relative backdrop-blur-xl bg-white/5 border border-white/10 shadow-2xl rounded-3xl p-10 text-center max-w-md w-full"
       >
         <h1 className="text-5xl font-extrabold bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
-          About Us
+          Add To Cart
         </h1>
         <h1 className="text-8xl font-extrabold bg-linear-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
           404
