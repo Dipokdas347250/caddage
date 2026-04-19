@@ -12,8 +12,8 @@ const Cheakout_List = () => {
                         <h2 className='text-[22px] text-primary font-bold font-inter leading-[100%]'>Xprako Demo</h2>
                         <p className='text-[12px] text-tertiary font-normal font-nunito mt-4'>Cart/ Information/ Shipping/ Payment</p>
                     </div>
-                    <div className="flex justify-between items-start gap-6.5 mt-6.5">
-                        <div className="w-[70%] ">
+                    <div className="lg:flex justify-between items-start gap-6.5 mt-6.5">
+                        <div className="lg:w-[70%] w-full ">
                             <div className="pt-11.5 px-8 pb-21 bg-[#F4F4FC]">
                                 <div className=" flex justify-between items-center">
                                     <h2 className='text-[20px] text-primary font-bold font-inter leading-[100%]'>Contact Information</h2>
@@ -80,7 +80,7 @@ const Cheakout_List = () => {
 
                             </div>
                         </div>
-                        <div className="w-[30%]">
+                        <div className="lg:w-[30%] w-full">
                             <div className="flex justify-between items-center border-b border-tertiary pb-4">
                                 <div className=" flex gap-4 items-center">
                                     <Image src={price} alt="price" />
