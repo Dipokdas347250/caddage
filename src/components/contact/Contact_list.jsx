@@ -14,9 +14,9 @@ const Contact_list = () => {
         <>
             <section className='py-30 bg-[#E2E2EB] '>
                 <Container>
-                    <div className="py-27.5 px-17.5 bg-white shadow-2xl">
-                      <div className="flex justify-between items-start gap-10">
-                          <div className="w-[45%]">
+                    <div className="lg:py-27.5 py-5 lg:px-17.5 px-2 bg-white shadow-2xl">
+                      <div className="lg:flex justify-between items-start gap-10">
+                          <div className="lg:w-[45%] w-full">
                             <div className="">
                                 <h3 className='text-[42px] text-primary font-bold font-inter leading-[120%] '>Feel free to contact us for any query.</h3>
 
@@ -49,7 +49,7 @@ const Contact_list = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[55%]">
+                        <div className="lg:w-[55%] w-full mt-5 lg:mt-0">
 
                             <div className="flex gap-7.5  ">
                                 <input
