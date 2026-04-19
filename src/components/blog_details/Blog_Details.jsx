@@ -22,8 +22,8 @@ const Blog_list = () => {
         <>
             <section className='py-30 bg-white'>
                 <Container>
-                    <div className="flex items-start gap-10">
-                        <div className="w-[65%]">
+                    <div className="lg:flex items-start gap-10">
+                        <div className="lg:w-[65%] w-full">
                             <div className="">
                                 <Image className='w-full ' src={blog00} alt="blog00" />
 
@@ -199,7 +199,7 @@ const Blog_list = () => {
 
 
                         </div>
-                        <div className="w-[35%]">
+                        <div className="lg:w-[35%] w-full">
                             <div className="pt-7 px-13.5 pb-10 bg-white shadow-2xl">
                                 <div className=" flex justify-center">
                                     <Image className=' ' src={blog11} alt="blog11" />
