@@ -13,12 +13,12 @@ const Add_to_cart = () => {
         <>
             <section className='py-30 bg-white'>
                 <Container>
-                    <div className=" flex justify-between items-center gap-12 ">
-                        <div className="w-1/2">
+                    <div className=" lg:flex justify-between items-center gap-12 ">
+                        <div className="lg:w-1/2 w-full">
                             <Image className='' src={add} alt="add" />
 
                         </div>
-                        <div className="w-1/2">
+                        <div className="lg:w-1/2 w-full">
                             <div className="flex justify-between items-center">
                                 <h3 className='text-[36px] text-primary font-bold font-inter leading-[100%]'>Black River Fruits</h3>
                                 <h3 className='text-[36px] text-secondary font-bold font-inter leading-[100%]'>$32.00</h3>
