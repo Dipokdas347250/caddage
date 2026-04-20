@@ -8,14 +8,14 @@ const Trusted = () => {
    <>
    <section className='pt-54 pb-40 bg-white'>
     <Container>
-        <div className=" flex justify-between items-center gap-13.75">
-        <div className="w-1/2">
+        <div className=" lg:flex justify-between items-center gap-13.75">
+        <div className="lg:w-1/2 w-full">
              <div className=" flex gap-11.25">
              <Image className='mb-10' src={box} alt="herb"  />   
              <Image className='mt-10' src={box} alt="herb"  />   
          </div>
         </div>
-         <div className="w-1/2">
+         <div className="lg:w-1/2 w-full">
             <h5 className='text-[18px] text-secondary font-bold font-nunito'>Know More About Shop</h5>
             <h2 className='text-[50px] text-primary font-bold font-inter leading-[120%]'>Trusted Organic Food Store For People</h2>
 
