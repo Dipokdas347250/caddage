@@ -12,7 +12,7 @@ const Icon_part = () => {
     <>
     <section className='py-8 bg-[#F0F2F5]'>
         <Container>
-            <div className=" flex justify-between">
+            <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-4 items-center ">
        <Image className=' ' src={logo1} alt="logo1"  /> 
 
        <Image className=' ' src={logo2} alt="logo2"  /> 
