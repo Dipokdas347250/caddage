@@ -103,8 +103,8 @@ const Product_Catagoris = () => {
             </div>
           </div>
 
-          <div className=" flex justify-between gap-9 mt-13.5 ">
-            <div className="w-[30%]">
+          <div className=" lg:flex justify-between gap-9 mt-13.5 ">
+            <div className="lg:w-[30%] w-full">
               <div className="py-12.5 px-12 bg-white shadow-xl ">
                 <div className=" border-b border-[#272D61] ">
                   <h2 className='text-[20px] text-primary font-bold font-inter '>Product Catagoris</h2>
@@ -340,7 +340,7 @@ const Product_Catagoris = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[70%]">
+            <div className="lg:w-[70%] w-full">
               <Link href="/Single_Shop">
                 <div className="">
                   <div className="flex items-center gap-8 bg-white shadow-xl p-3.5 border border-white duration-300 ease-in-out hover:border hover:border-secondary cursor-pointer">
