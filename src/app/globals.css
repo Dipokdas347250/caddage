@@ -33,12 +33,7 @@
   @apply bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7 py-3 uppercase cursor-pointer duration-300 hover:bg-white hover:text-secondary;
 }
 
-body {
-  margin: 0;
-  background: #0f172a;
-  color: white;
-  font-family: sans-serif;
-}
+
 
 .container {
   height: 100vh;
