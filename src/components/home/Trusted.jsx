@@ -4,6 +4,7 @@ import Image from 'next/image'
 import box from '../../../public/images/box.png';
 
 const Trusted = () => {
+
   return (
    <>
    <section className='pt-54 pb-40 bg-white'>

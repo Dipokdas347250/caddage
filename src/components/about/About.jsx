@@ -6,6 +6,7 @@ import about from '../../../public/images/about.png';
 
 
 const About = () => {
+
   return (
     <>
     <section className='py-37 bg-[#F7F5EB] relative'>

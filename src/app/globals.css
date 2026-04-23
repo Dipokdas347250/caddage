@@ -32,3 +32,69 @@
 .btn-primary {
   @apply bg-secondary border border-secondary text-white font-nunito font-bold text-[14px] px-7 py-3 uppercase cursor-pointer duration-300 hover:bg-white hover:text-secondary;
 }
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.svg {
+  width: 300px;
+}
+
+/* 404 text animation */
+.text {
+  font-size: 120px;
+  fill: transparent;
+  stroke: #22c55e;
+  stroke-width: 2;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: drawText 2s ease forwards;
+}
+
+@keyframes drawText {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* moving ball animation */
+.ball {
+  fill: #22c55e;
+  animation: moveBall 3s infinite ease-in-out;
+}
+
+@keyframes moveBall {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(400px); }
+  100% { transform: translateX(0); }
+}
+
+/* button */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
