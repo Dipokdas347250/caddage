@@ -29,7 +29,7 @@ const Products = () => {
       <Tab 
        selectedClassName=" bg-secondary text-white"
       className="py-3  px-10 lg:px-14 text-center text-[18px] text-tertiary font-normal font-nunito   cursor-pointer outline-none rounded-full ">
-        Food & Drinks
+        All products
         </Tab>
       <Tab
       selectedClassName=" bg-secondary text-white"
