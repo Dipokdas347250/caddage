@@ -29,7 +29,7 @@ const Drinks = () => {
   return (
     <>
       <div className="">
-        <div className=" grid grid-cols-4 gap-7.5 mt-12.5">
+        <div className=" grid grid-cols-4 gap-4 mt-12.5">
 
           {products?.map((item)=>(
             
