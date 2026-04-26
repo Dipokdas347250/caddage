@@ -47,7 +47,7 @@ const Drinks = () => {
                   <button
                     onClick={()=>handleActivecategory(item.name)}
                     key={item.id}
-                    className="py-3  px-10 lg:px-10 text-center text-[18px] text-tertiary font-normal font-nunito   cursor-pointer outline-none rounded-full ">
+                    className={`py-3  px-10 lg:px-10 text-center text-[18px] text-tertiary font-normal font-nunito   cursor-pointer outline-none rounded-full duration-300 ease-in-out ${category === item.name ? 'bg-secondary text-white' : 'bg-white text-tertiary'}`}>
                     {item.name}
                   </button>
                 ))}
