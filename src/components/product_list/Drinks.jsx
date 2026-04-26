@@ -11,7 +11,8 @@ import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-ico
 const Drinks = () => {
 
   const [products, setProducts] = useState([])
-  const [cateogry, setCategory] = useState("all products")
+  const [category, setCategory] = useState("All products")
+  const [filterProducts, setfilterProducts] = useState([])
 
   const ourproducts = () => {
     axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products`)
@@ -27,9 +28,10 @@ const Drinks = () => {
     ourproducts()
   }, [])
  const handleActivecategory = (name) => {
+  setCategory(name)
   let filtercategory = products.filter((item)=> item.category === name)
 
-  console.log(filtercategory);
+  setfilterProducts(filtercategory);
   
   
  }
@@ -54,12 +56,19 @@ const Drinks = () => {
 
         <div className=" grid grid-cols-4 gap-4 mt-12.5">
 
-          {products?.map((item) => (
-
+          {category === "All products"
+          
+          
+          ? 
+          products?.map((item) => (
             <Our_Product key={item.id} product={item} />
-
-
-          ))}
+          ))
+            :
+          filterProducts?.map((item) => (
+            <Our_Product key={item.id} product={item} />
+          ))
+          
+          }
 
 
 
