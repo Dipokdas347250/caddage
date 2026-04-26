@@ -4,41 +4,64 @@ import React, { useEffect, useState } from 'react'
 
 import axios from 'axios';
 import Our_Product from './Our_Product';
+import Navberdata from '@/data/navber';
+import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 
 const Drinks = () => {
 
   const [products, setProducts] = useState([])
+  const [cateogry, setCategory] = useState("all products")
 
-  const ourproducts = ()=>{
+  const ourproducts = () => {
     axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products`)
-    .then((res)=>{
-      setProducts(res.data.products);    
-    }).catch((err)=>{
-      console.log(err);
-      
-    })
+      .then((res) => {
+        setProducts(res.data.products);
+      }).catch((err) => {
+        console.log(err);
+
+      })
   }
 
-  useEffect(()=>{
-   ourproducts()
-  },[])
+  useEffect(() => {
+    ourproducts()
+  }, [])
+ const handleActivecategory = (name) => {
+  let filtercategory = products.filter((item)=> item.category === name)
 
+  console.log(filtercategory);
+  
+  
+ }
 
 
   return (
     <>
       <div className="">
+
+       <div className=" flex justify-around items-center   border-t border-b mt-13.75 ">
+                <MdKeyboardDoubleArrowLeft />
+                {Navberdata?.categoyrList?.map((item) => (
+                  <button
+                    onClick={()=>handleActivecategory(item.name)}
+                    key={item.id}
+                    className="py-3  px-10 lg:px-10 text-center text-[18px] text-tertiary font-normal font-nunito   cursor-pointer outline-none rounded-full ">
+                    {item.name}
+                  </button>
+                ))}
+                <MdKeyboardDoubleArrowRight />
+              </div>
+
         <div className=" grid grid-cols-4 gap-4 mt-12.5">
 
-          {products?.map((item)=>(
-            
+          {products?.map((item) => (
+
             <Our_Product key={item.id} product={item} />
 
-         
+
           ))}
-         
-         
+
+
 
         </div>
         {/* <div className=" flex justify-between gap-7.5 mt-7.5">
@@ -165,8 +188,8 @@ const Drinks = () => {
          
 
         </div> */}
-       
-       
+
+
       </div>
     </>
   )
