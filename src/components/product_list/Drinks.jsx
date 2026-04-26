@@ -1,46 +1,44 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-
 import axios from 'axios';
 import Our_Product from './Our_Product';
 import Navberdata from '@/data/navber';
 import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
 
-
 const Drinks = () => {
-
   const [products, setProducts] = useState([])
   const [category, setCategory] = useState("All products")
   const [filterProducts, setfilterProducts] = useState([])
+  const [limit, setLimit] = useState([])
 
   const ourproducts = () => {
     axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products`)
       .then((res) => {
         setProducts(res.data.products);
+        setLimit(res.data.products.slice(0,8))
       }).catch((err) => {
         console.log(err);
-
       })
   }
-
   useEffect(() => {
     ourproducts()
   }, [])
  const handleActivecategory = (name) => {
   setCategory(name)
   let filtercategory = products.filter((item)=> item.category === name)
-
   setfilterProducts(filtercategory);
-  
-  
+ }
+
+ const handleShowMore = () => {
+  setLimit(products)
+ 
  }
 
 
   return (
     <>
       <div className="">
-
        <div className=" flex justify-around items-center   border-t border-b mt-13.75 ">
                 <MdKeyboardDoubleArrowLeft />
                 {Navberdata?.categoyrList?.map((item) => (
@@ -55,23 +53,27 @@ const Drinks = () => {
               </div>
 
         <div className=" grid grid-cols-4 gap-4 mt-12.5">
-
-          {category === "All products"
-          
-          
+          {category === "All products"          
           ? 
-          products?.map((item) => (
+          limit?.map((item) => (
             <Our_Product key={item.id} product={item} />
           ))
             :
           filterProducts?.map((item) => (
             <Our_Product key={item.id} product={item} />
           ))
-          
           }
-
-
-
+        </div>
+        <div className=" text-center mt-10">
+        {limit.length > 8 ? 
+        (<button
+          onClick={()=>setLimit(products.slice(0,8))}
+          className='btn-primary'>See Less Product</button>)
+      :
+       ( <button
+          onClick={handleShowMore}
+          className='btn-primary'>See all Product</button>)
+      }
         </div>
         {/* <div className=" flex justify-between gap-7.5 mt-7.5">
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
@@ -197,8 +199,6 @@ const Drinks = () => {
          
 
         </div> */}
-
-
       </div>
     </>
   )
