@@ -16,7 +16,7 @@ const Drinks = () => {
     axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products`)
       .then((res) => {
         setProducts(res.data.products);
-        setLimit(res.data.products.slice(0,8))
+        setLimit(res.data.products.slice(0, 8))
       }).catch((err) => {
         console.log(err);
       })
@@ -24,56 +24,60 @@ const Drinks = () => {
   useEffect(() => {
     ourproducts()
   }, [])
- const handleActivecategory = (name) => {
-  setCategory(name)
-  let filtercategory = products.filter((item)=> item.category === name)
-  setfilterProducts(filtercategory);
- }
+  const handleActivecategory = (name) => {
+    setCategory(name)
+    let filtercategory = products.filter((item) => item.category === name)
+    setfilterProducts(filtercategory);
+  }
 
- const handleShowMore = () => {
-  setLimit(products)
- 
- }
+  const handleShowMore = () => {
+    setLimit(products)
+
+  }
 
 
   return (
     <>
       <div className="">
-       <div className=" flex justify-around items-center   border-t border-b mt-13.75 ">
-                <MdKeyboardDoubleArrowLeft />
-                {Navberdata?.categoyrList?.map((item) => (
-                  <button
-                    onClick={()=>handleActivecategory(item.name)}
-                    key={item.id}
-                    className={`py-3  px-10 lg:px-10 text-center text-[18px] text-tertiary font-normal font-nunito   cursor-pointer outline-none rounded-full duration-300 ease-in-out ${category === item.name ? 'bg-secondary text-white' : 'bg-white text-tertiary'}`}>
-                    {item.name}
-                  </button>
-                ))}
-                <MdKeyboardDoubleArrowRight />
-              </div>
+        <div className="flex justify-between items-center mt-13.75">
 
-        <div className=" grid grid-cols-4 gap-4 mt-12.5">
-          {category === "All products"          
-          ? 
-          limit?.map((item) => (
-            <Our_Product key={item.id} product={item} />
-          ))
+       
+          <MdKeyboardDoubleArrowLeft />
+        <div className=" grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 items-center   border-t border-b  w-[90%] ">
+          {Navberdata?.categoyrList?.map((item) => (
+            <button
+              onClick={() => handleActivecategory(item.name)}
+              key={item.id}
+              className={`py-3  px-10 lg:px-10 text-center text-[18px] text-tertiary font-normal font-nunito   cursor-pointer outline-none rounded-full duration-300 ease-in-out ${category === item.name ? 'bg-secondary text-white' : 'bg-white text-tertiary'}`}>
+              {item.name}
+            </button>
+          ))}
+        </div>
+          <MdKeyboardDoubleArrowRight />
+           </div>
+
+        <div className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-12.5">
+          {category === "All products"
+            ?
+            limit?.map((item) => (
+              <Our_Product key={item.id} product={item} />
+            ))
             :
-          filterProducts?.map((item) => (
-            <Our_Product key={item.id} product={item} />
-          ))
+            filterProducts?.map((item) => (
+              <Our_Product key={item.id} product={item} />
+            ))
           }
         </div>
         <div className=" text-center mt-10">
-        {limit.length > 8 ? 
-        (<button
-          onClick={()=>setLimit(products.slice(0,8))}
-          className='btn-primary'>See Less Product</button>)
-      :
-       ( <button
-          onClick={handleShowMore}
-          className='btn-primary'>See all Product</button>)
-      }
+          {limit.length > 8 ?
+            (<button
+              onClick={() => setLimit(products.slice(0, 8))}
+              className='btn-primary'>See Less Product</button>)
+            :
+            (<button
+              onClick={handleShowMore}
+              className='btn-primary'>See all Product</button>)
+          }
         </div>
         {/* <div className=" flex justify-between gap-7.5 mt-7.5">
           <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">

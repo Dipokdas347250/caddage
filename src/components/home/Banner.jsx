@@ -56,6 +56,7 @@ const Banner = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
+    
   };
   return (
     <>
