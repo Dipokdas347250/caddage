@@ -164,7 +164,7 @@ const Banner = () => {
 
           </Slider>
 
-          <div className="py-5.75 px-16.75 bg-white flex justify-between items-center shadow-md absolute -bottom-60 left-0 w-full">
+          <div className="py-5.75 px-16.75 bg-white lg:flex justify-between items-center shadow-md absolute -bottom-60 left-0 w-full">
            <div className="relative pr-10 after:absolute after:content-[''] after:w-0.5 after:h-full after:bg-[#707070] after:bottom-0 after:right-0 after:duration-300 after:ease-in-out ">
                    <Image className=' ' src={box01} alt="leaves"  /> 
                    <h3 className='text-[22px] text-primary font-bold font-inter'>Curated Products</h3>
