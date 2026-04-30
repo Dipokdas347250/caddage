@@ -19,6 +19,15 @@ const BlogUs = () => {
             
           </div>
         </div>
+        <div className="">
+          <h2 className='text-[55px] text-primary font-bold font-inter leading-[120%]'>Blog page</h2>
+          <div className="flex items-center gap-2 text-[18px] text-[#133344] font-normal font-nunito">
+            <h3>Home</h3>
+            <MdOutlineKeyboardArrowRight/>
+            <h3>Blog</h3>
+            
+          </div>
+        </div>
       </Container>
     </section>
     </>
