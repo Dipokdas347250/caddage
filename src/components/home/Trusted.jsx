@@ -26,6 +26,16 @@ const Trusted = () => {
             <h3 className='text-[16px] text-tertiary font-bold font-nunito mt-7.5'>Jerry Henson</h3>
             <h5 className='text-[12px] text-tertiary font-normal font-nunito'> Shop Director</h5>
          </div>
+         <div className="lg:w-1/2 w-full">
+            <h5 className='text-[18px] text-secondary font-bold font-nunito'>Know More About Shop</h5>
+            <h2 className='text-[50px] text-primary font-bold font-inter leading-[120%]'>Trusted Organic Food Store For People</h2>
+
+            <p className='text-[18px] text-tertiary font-normal font-nunito mt-8.75'>Buy natural, sustainable and chemicalfree products from local the country. We are a strong community of 100,000+</p>
+            <p className='text-[18px] text-tertiary font-normal font-nunito mt-5.5'>sellers who aspire to be good, do good, and spread goodness. We democratic, self-sustaining, two-sided marketplace which thrives on trust and is built on community and quality content.</p>
+
+            <h3 className='text-[16px] text-tertiary font-bold font-nunito mt-7.5'>Jerry Henson</h3>
+            <h5 className='text-[12px] text-tertiary font-normal font-nunito'> Shop Director</h5>
+         </div>
         </div>
     </Container>
    </section>
