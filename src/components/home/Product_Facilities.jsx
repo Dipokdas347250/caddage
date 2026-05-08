@@ -95,6 +95,41 @@ const Product_Facilities = () => {
                 </div>
             </div>
             </div>
+           <div className="lg:w-[30%] w-full">
+                <div className="">
+                <div className="flex items-center ">
+                    <div className="">
+                        <Image className=' ' src={icon04} alt="icon04" />
+                    </div>
+                    <div className=""> 
+                        <h2 className='text-[22px] text-primary font-bold font-inter leading-[100%]'>Order Flexibility</h2>
+                        <p className='text-[16px] text-tertiary font-normal font-nunito mt-3.25'>Est ante in nibh mauris. Ullamcor morbi tincidunt ornare massa</p>
+                    </div>
+                </div>
+            </div>
+            <div className="">
+                <div className="flex items-center mt-12.5">
+                    <div className="">
+                        <Image className=' ' src={icon05} alt="icon05" />
+                    </div>
+                    <div className=""> 
+                        <h2 className='text-[22px] text-primary font-bold font-inter leading-[100%]'>Variety & Selection</h2>
+                        <p className='text-[16px] text-tertiary font-normal font-nunito mt-3.25'>Est ante in nibh mauris. Ullamcor morbi tincidunt ornare massa</p>
+                    </div>
+                </div>
+            </div>
+            <div className="">
+                <div className="flex items-center mt-12.5">
+                    <div className="">
+                        <Image className=' ' src={icon06} alt="icon06" />
+                    </div>
+                    <div className=""> 
+                        <h2 className='text-[22px] text-primary font-bold font-inter leading-[100%]'>Livestock Product</h2>
+                        <p className='text-[16px] text-tertiary font-normal font-nunito mt-3.25'>Est ante in nibh mauris. Ullamcor morbi tincidunt ornare massa</p>
+                    </div>
+                </div>
+            </div>
+            </div>
         </div>
     </Container>
  </section>
