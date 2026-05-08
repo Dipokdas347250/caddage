@@ -27,9 +27,6 @@ const Products = () => {
               <div>
                 <Drinks />
               </div>
-              <div>
-                <Drinks />
-              </div>
 
 
           </div>
