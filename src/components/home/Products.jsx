@@ -13,7 +13,7 @@ const Products = () => {
 
   return (
     <>
-      <section className='pt-26.25 pb-30 bg-white'>
+      <section className='pt-26.25 pb-30 px-2 bg-white'>
         <Container>
           <div className="">
             <h2 className='text-[48px] text-primary font-bold font-inter text-center'>Our Products</h2>

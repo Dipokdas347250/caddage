@@ -6,17 +6,17 @@ import offer from '../../../public/images/offer.png';
 const Hot_offer = () => {
     return (
         <>
-            <section className='pt-15 pb-9 bg-[#F7F5EB]'>
+            <section className='pt-15 pb-9 px-2 bg-[#F7F5EB]'>
                 <Container>
-                    <div className="flex justify-between items-center gap-26.25">
-                        <div className="w-1/2">
+                    <div className="lg:flex justify-between items-center gap-26.25">
+                        <div className="lg:w-1/2 w-full">
                             <Image className=' w-full' src={offer} alt="offer" />
 
                         </div>
                         <div className=" lg:w-1/2 w-full ">
                            <div className="py-30">
                              <h4 className='text-[18px] text-secondary font-bold font-nunito'>Todays Hot Deals</h4>
-                            <h2 className='text-[50px] text-primary font-bold font-inter leading-[120%]'>Original Stock Honey Combo Package</h2>
+                            <h2 className='lg:text-[50px] text-[32px] text-primary font-bold font-inter leading-[120%]'>Original Stock Honey Combo Package</h2>
                             <p className='text-[18px] text-tertiary font-normal font-nunito w-[90%] mt-5'>Cur tantas regiones barbarorum obiit, tot maria transmist summo bono fruitur id est voluptate barbarorum  </p>
                             <div className="flex items-center gap-5 mt-6">
                                 <div className="">

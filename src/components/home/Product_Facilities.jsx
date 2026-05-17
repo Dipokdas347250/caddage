@@ -12,7 +12,7 @@ import icon06 from '../../../public/images/icon06.png';
 const Product_Facilities = () => {
   return (
  <>
- <section className='pt-26.75 pb-28.5 bg-white'>
+ <section className='pt-26.75 pb-28.5 px-2 bg-white'>
     <Container>
         <div className="">
              <h2 className='text-[48px] text-primary font-bold font-inter text-center leading-[100%]'>Product Facilities</h2>
