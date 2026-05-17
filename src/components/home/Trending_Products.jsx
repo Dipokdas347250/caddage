@@ -6,11 +6,11 @@ import tren from '../../../public/images/tren.png';
 const Trending_Products = () => {
     return (
         <>
-            <section className='py-27 pb-29.5 bg-[#ECECEC]'>
+            <section className='lg:py-27 py-10 lg:pb-29.5 pb-10 px-2 bg-[#ECECEC]'>
                 <Container>
                     <div className="">
-                        <h2 className='text-[48px] text-primary font-bold font-inter text-center leading-[100%]'>Trending Products</h2>
-                        <p className='text-[16px] text-tertiary font-normal font-nunito mt-5 text-center'>
+                        <h2 className='lg:text-[48px] text-[32px] text-primary font-bold font-inter text-center leading-[100%]'>Trending Products</h2>
+                        <p className='lg:text-[16px] text-[14px] text-tertiary font-normal font-nunito mt-5 text-center'>
                             A highly efficient slip-ring scanner for today's diagnostic requirements.
                         </p>
                     </div>
@@ -95,8 +95,8 @@ const Trending_Products = () => {
 
 
                         </div>
-                        <div className=" flex justify-between items-center gap-7.5 mt-7.5 ">
-                            <div className="w-1/3">
+                        <div className=" lg:flex justify-between items-center gap-7.5 mt-7.5 ">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
@@ -108,7 +108,7 @@ const Trending_Products = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/3">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
@@ -120,7 +120,7 @@ const Trending_Products = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/3">
+                            <div className="lg:w-1/3 w-full">
                                 <div className=" group py-4.75 px-3.25 bg-white flex items-center gap-5 cursor-pointer duration-300 ease-in-out border-b-4 border-white hover:border-b-4 hover:border-secondary">
                                     <div className="">
                                         <Image className=' ' src={tren} alt="tren" />
