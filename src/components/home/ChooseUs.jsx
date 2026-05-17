@@ -23,7 +23,7 @@ const ChooseUs = () => {
                 <div className="lg:w-1/2 w-full">
                 <div className="group ">
                     <div className="duration-300 ease-in-out  group-hover:bg-secondary lg:py-13.5 py-5 lg:px-16 px-5 bg-white lg:flex items-center gap-6 shadow-xl">
-                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
+                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary flex justify-center">
                          <Image className='' src={us01} alt="us01"  />  
                     </div>
                     <div className="lg:mt-0 mt-5">
@@ -35,8 +35,8 @@ const ChooseUs = () => {
                 </div>
                 <div className="lg:w-1/2 w-full">
                  <div className="group ">
-                    <div className="duration-300 ease-in-out  group-hover:bg-secondary lg:py-13.5 py-5 lg:px-16 px-5 bg-white lg:flexitems-center gap-6 shadow-xl">
-                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
+                    <div className="duration-300 ease-in-out  group-hover:bg-secondary lg:py-13.5 py-5 lg:px-16 px-5 bg-white lg:flex items-center gap-6 shadow-xl">
+                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary flex justify-center">
                          <Image className='' src={us02} alt="us01"  />  
                     </div>
                     <div className="lg:mt-0 mt-5">
@@ -50,7 +50,7 @@ const ChooseUs = () => {
                 <div className="lg:w-1/2 w-full">
                 <div className="group ">
                     <div className="duration-300 ease-in-out  group-hover:bg-secondary lg:py-13.5 py-5 lg:px-16 px-5 bg-white lg:flex items-center gap-6 shadow-xl">
-                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
+                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary flex justify-center">
                          <Image className='' src={us03} alt="us01"  />  
                     </div>
                     <div className="lg:mt-0 mt-5">
@@ -63,7 +63,7 @@ const ChooseUs = () => {
                 <div className="lg:w-1/2 w-full">
                  <div className="group ">
                     <div className="duration-300 ease-in-out  group-hover:bg-secondary lg:py-13.5 py-5 lg:px-16 px-5 bg-white lg:flex items-center gap-6 shadow-xl">
-                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary">
+                    <div className="duration-300 ease-in-out p-6 bg-secondary group-hover:bg-tertiary flex justify-center">
                          <Image className='' src={us04} alt="us01"  />  
                     </div>
                     <div className="lg:mt-0 mt-5">
