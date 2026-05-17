@@ -60,7 +60,7 @@ const Banner = () => {
   };
   return (
     <>
-      <section className='pt-30 lg:pb-40 pb-20 bg-[#F7F5EB] relative'>
+      <section className='pt-30 lg:pb-40 pb-20 px-2 bg-[#F7F5EB] relative'>
         <Image className=' absolute top-0 left-0 lg:w-[12%] w-[30%] ' src={leaves} alt="leaves" />
         <Image className=' absolute  right-0 bottom-0 lg:w-[10%] w-[30%] ' src={leaves0} alt="leaves" />
         <Container>
