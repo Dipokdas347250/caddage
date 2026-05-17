@@ -12,10 +12,10 @@ import icon06 from '../../../public/images/icon06.png';
 const Product_Facilities = () => {
   return (
  <>
- <section className='pt-26.75 pb-28.5 px-2 bg-white'>
+ <section className='lg:pt-26.75 pt-10 lg:pb-28.5 pb-10 px-2 bg-white'>
     <Container>
         <div className="">
-             <h2 className='text-[48px] text-primary font-bold font-inter text-center leading-[100%]'>Product Facilities</h2>
+             <h2 className='lg:text-[48px] text-[32px] text-primary font-bold font-inter text-center leading-[100%]'>Product Facilities</h2>
                 <p className='text-[16px] text-tertiary font-normal font-nunito mt-5 text-center'>
                     A highly efficient slip-ring scanner for today's diagnostic requirements.
                 </p>

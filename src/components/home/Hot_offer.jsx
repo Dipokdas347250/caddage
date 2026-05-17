@@ -14,7 +14,7 @@ const Hot_offer = () => {
 
                         </div>
                         <div className=" lg:w-1/2 w-full ">
-                           <div className="py-30">
+                           <div className="lg:py-30 py-10">
                              <h4 className='text-[18px] text-secondary font-bold font-nunito'>Todays Hot Deals</h4>
                             <h2 className='lg:text-[50px] text-[32px] text-primary font-bold font-inter leading-[120%]'>Original Stock Honey Combo Package</h2>
                             <p className='text-[18px] text-tertiary font-normal font-nunito w-[90%] mt-5'>Cur tantas regiones barbarorum obiit, tot maria transmist summo bono fruitur id est voluptate barbarorum  </p>
