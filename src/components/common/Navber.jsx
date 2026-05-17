@@ -33,7 +33,7 @@ const Navber = () => {
 }, []);
 
     return (
-        <nav  ref={menuRef} className='py-3 sticky top-0 z-50 bg-white shadow-sm'>
+        <nav  ref={menuRef} className='py-3 px-2 sticky top-0 z-50 bg-white shadow-sm'>
             <Container>
                 <div className="flex justify-between items-center">
 
