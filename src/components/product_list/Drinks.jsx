@@ -1,211 +1,177 @@
-"use client"
+"use client";
 
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
-import Our_Product from './Our_Product';
-import Navberdata from '@/data/navber';
-import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from "react-icons/md";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import Our_Product from "./Our_Product";
+import Navberdata from "@/data/navber";
+import {
+  MdKeyboardDoubleArrowLeft,
+  MdKeyboardDoubleArrowRight,
+} from "react-icons/md";
 
 const Drinks = () => {
-  const [products, setProducts] = useState([])
-  const [category, setCategory] = useState("All products")
-  const [filterProducts, setfilterProducts] = useState([])
-  const [limit, setLimit] = useState([])
+  const [products, setProducts] = useState([]);
+  const [category, setCategory] = useState("All products");
+  const [limit, setLimit] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
-  const ourproducts = () => {
-    axios.get(`${process.env.NEXT_PUBLIC_API_URL}/products`)
-      .then((res) => {
-        setProducts(res.data.products);
-        setLimit(res.data.products.slice(0, 8))
-      }).catch((err) => {
-        console.log(err);
-      })
-  }
+  // Fetch Products
+  const fetchProducts = async () => {
+    try {
+      setLoading(true);
+
+      const res = await axios.get(
+        `https://dummyjson.com/products`
+      );
+
+      console.log("API Response:", res.data);
+
+      const allProducts = res.data.products || [];
+
+      setProducts(allProducts);
+      setLimit(allProducts.slice(0, 8));
+    } catch (err) {
+      console.error(err);
+      setError("Failed to load products.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
-    ourproducts()
-  }, [])
+    fetchProducts();
+  }, []);
+
+  // Category Filter
   const handleActivecategory = (name) => {
-    setCategory(name)
-    let filtercategory = products.filter((item) => item.category === name)
-    setfilterProducts(filtercategory);
-  }
+    setCategory(name);
 
+    if (name === "All products") {
+      setLimit(products.slice(0, 8));
+      return;
+    }
+
+    const filtered = products.filter(
+      (item) =>
+        item.category?.toLowerCase() === name.toLowerCase()
+    );
+
+    setLimit(filtered);
+  };
+
+  // See All
   const handleShowMore = () => {
-    setLimit(products)
+    if (category === "All products") {
+      setLimit(products);
+    } else {
+      const filtered = products.filter(
+        (item) =>
+          item.category?.toLowerCase() === category.toLowerCase()
+      );
+      setLimit(filtered);
+    }
+  };
 
+  // See Less
+  const handleShowLess = () => {
+    if (category === "All products") {
+      setLimit(products.slice(0, 8));
+    } else {
+      const filtered = products.filter(
+        (item) =>
+          item.category?.toLowerCase() === category.toLowerCase()
+      );
+      setLimit(filtered.slice(0, 8));
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="text-center py-20 text-xl font-semibold">
+        Loading Products...
+      </div>
+    );
   }
 
+  if (error) {
+    return (
+      <div className="text-center py-20 text-red-500">
+        {error}
+      </div>
+    );
+  }
 
   return (
-    <>
-      <div className="">
-        <div className="flex justify-between items-center mt-13.75">
+    <div>
+      {/* Category */}
+      <div className="flex justify-between items-center mt-14">
+        <MdKeyboardDoubleArrowLeft size={30} />
 
-       
-          <MdKeyboardDoubleArrowLeft />
-        <div className=" grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 items-center   border-t border-b  w-[90%] ">
+        <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 w-[90%] border-y">
           {Navberdata?.categoyrList?.map((item) => (
             <button
-              onClick={() => handleActivecategory(item.name)}
               key={item.id}
-              className={`py-3  px-10 lg:px-10 text-center text-[18px] text-tertiary font-normal font-nunito   cursor-pointer outline-none rounded-full duration-300 ease-in-out ${category === item.name ? 'bg-secondary text-white' : 'bg-white text-tertiary'}`}>
+              onClick={() => handleActivecategory(item.name)}
+              className={`py-3 px-6 transition-all duration-300 ${
+                category === item.name
+                  ? "bg-secondary text-white"
+                  : "bg-white text-black"
+              }`}
+            >
               {item.name}
             </button>
           ))}
         </div>
-          <MdKeyboardDoubleArrowRight />
-           </div>
 
-        <div className=" grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-12.5">
-          {category === "All products"
-            ?
-            limit?.map((item) => (
-              <Our_Product key={item.id} product={item} />
-            ))
-            :
-            filterProducts?.map((item) => (
-              <Our_Product key={item.id} product={item} />
-            ))
-          }
-        </div>
-        <div className=" text-center mt-10">
-          {limit.length > 8 ?
-            (<button
-              onClick={() => setLimit(products.slice(0, 8))}
-              className='btn-primary'>See Less Product</button>)
-            :
-            (<button
-              onClick={handleShowMore}
-              className='btn-primary'>See all Product</button>)
-          }
-        </div>
-        {/* <div className=" flex justify-between gap-7.5 mt-7.5">
-          <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
-            <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
-              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
-              <div className="flex items-center gap-5">
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <FaRegHeart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <PiShoppingCart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <IoMdSearch />
-                </div>
-
-              </div>
-            </div>
-            <Image className=' ' src={img} alt="right" />
-            <div className="  ">
-              <div className="flex gap-1 items-center mx-auto mt-5 ml-[50%] translate-x-[-50%]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <h4>(24)</h4>
-              </div>
-              <h3 className='text-[16px] text-primary font-bold font-inter text-center mt-2 mb-3'>Juicy Orange Pack</h3>
-              <h4 className='text-[14px] text-[#223645] font-normal font-nunito text-center '>$19.00</h4>
-            </div>
-          </div>
-          <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
-            <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
-              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
-              <div className="flex items-center gap-5">
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <FaRegHeart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <PiShoppingCart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <IoMdSearch />
-                </div>
-
-              </div>
-            </div>
-            <Image className=' ' src={img} alt="right" />
-            <div className="  ">
-              <div className="flex gap-1 items-center mx-auto mt-5 ml-[50%] translate-x-[-50%]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <h4>(24)</h4>
-              </div>
-              <h3 className='text-[16px] text-primary font-bold font-inter text-center mt-2 mb-3'>Juicy Orange Pack</h3>
-              <h4 className='text-[14px] text-[#223645] font-normal font-nunito text-center '>$19.00</h4>
-            </div>
-          </div>
-          <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
-            <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
-              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
-              <div className="flex items-center gap-5">
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <FaRegHeart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <PiShoppingCart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <IoMdSearch />
-                </div>
-
-              </div>
-            </div>
-            <Image className=' ' src={img} alt="right" />
-            <div className="  ">
-              <div className="flex gap-1 items-center mx-auto mt-5 ml-[50%] translate-x-[-50%]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <h4>(24)</h4>
-              </div>
-              <h3 className='text-[16px] text-primary font-bold font-inter text-center mt-2 mb-3'>Juicy Orange Pack</h3>
-              <h4 className='text-[14px] text-[#223645] font-normal font-nunito text-center '>$19.00</h4>
-            </div>
-          </div>
-          <div className="bg-white pb-5 shadow-xl relative after:content-[''] after:absolute after:top-0 after:left-0 after:h-0 after:w-full after:bg-white after:opacity-70  after:duration-300 after:ease-in-out hover:after:h-full cursor-pointer">
-            <div className="absolute top-0 left-0 flex justify-center items-center    h-full w-full  opacity-0 hover:opacity-100 duration-300 ease-in-out z-50 text-black font-serif">
-              <h3 className=' absolute text-[14px] text-white font-normal font-nunito top-2 right-2 py-1 px-2.5 bg-secondary rounded-br-xl rounded-tl-xl '>-29%</h3>
-              <div className="flex items-center gap-5">
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <FaRegHeart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <PiShoppingCart />
-                </div>
-                <div className="p-2.5 bg-secondary text-white border border-secondary rounded-full cursor-pointer duration-300 ease-in-out hover:bg-white hover:text-secondary">
-                  <IoMdSearch />
-                </div>
-
-              </div>
-            </div>
-            <Image className=' ' src={img} alt="right" />
-            <div className="  ">
-              <div className="flex gap-1 items-center mx-auto mt-5 ml-[50%] translate-x-[-50%]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <h4>(24)</h4>
-              </div>
-              <h3 className='text-[16px] text-primary font-bold font-inter text-center mt-2 mb-3'>Juicy Orange Pack</h3>
-              <h4 className='text-[14px] text-[#223645] font-normal font-nunito text-center '>$19.00</h4>
-            </div>
-          </div>
-         
-
-        </div> */}
+        <MdKeyboardDoubleArrowRight size={30} />
       </div>
-    </>
-  )
-}
 
-export default Drinks
+      {/* Products */}
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
+        {limit.length > 0 ? (
+          limit.map((item) => (
+            <Our_Product
+              key={item._id}
+              product={item}
+            />
+          ))
+        ) : (
+          <h2 className="text-center col-span-4 text-xl font-semibold">
+            No Products Found
+          </h2>
+        )}
+      </div>
+
+      {/* Button */}
+      {limit.length > 0 && (
+        <div className="text-center mt-10">
+          {limit.length >= products.length ||
+          (category !== "All products" &&
+            limit.length ===
+              products.filter(
+                (item) =>
+                  item.category?.toLowerCase() ===
+                  category.toLowerCase()
+              ).length) ? (
+            <button
+              onClick={handleShowLess}
+              className="btn-primary"
+            >
+              See Less Product
+            </button>
+          ) : (
+            <button
+              onClick={handleShowMore}
+              className="btn-primary"
+            >
+              See All Product
+            </button>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default Drinks;
