@@ -87,12 +87,20 @@ const Drinks = () => {
   };
 
   if (loading) {
-    return (
-      <div className="text-center py-20 text-xl font-semibold">
-        Loading Products...
-      </div>
-    );
-  }
+  return (
+    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-6 mt-12">
+      {[...Array(8)].map((_, index) => (
+        <div key={index} className="border rounded-xl p-4">
+          <div className="skeleton h-56 rounded-lg"></div>
+          <div className="skeleton h-5 w-3/4 rounded mt-4"></div>
+          <div className="skeleton h-4 w-1/2 rounded mt-3"></div>
+          <div className="skeleton h-6 w-1/3 rounded mt-4"></div>
+          <div className="skeleton h-10 rounded-lg mt-6"></div>
+        </div>
+      ))}
+    </div>
+  );
+}
 
   if (error) {
     return (
