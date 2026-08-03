@@ -20,7 +20,7 @@ const ProductDetails = async ({ params }) => {
 
         {/* Left Side */}
         <div>
-          <div className="relative w-full h-[550px] bg-gray-100 rounded-2xl overflow-hidden">
+          <div className="relative w-full h-137.5 bg-gray-100 rounded-2xl overflow-hidden">
             <Image
               src={product.images?.[0] || product.thumbnail}
               alt={product.title}
